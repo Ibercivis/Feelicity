@@ -94,6 +94,18 @@ a.misStreetrs:active {
     background-position: bottom;
 }
 
+.centerize {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.derecha
+{
+    display: block;
+    margin: 0 auto;
+    text-align: right;
+}
 
 
 #status_message {
@@ -236,11 +248,9 @@ a.estiloBlanco {
 
 #logotipo {
     position:relative;
-    top:20px;
+    top:-20px;
     height:157px;
     width: 200px;
-    margin-left: 20px;
-    padding: 20;
     z-index:2;
     clear: both;
 }
@@ -255,7 +265,8 @@ a.estiloBlanco {
 }
 
 #cabecera {
-    min-height:185px
+    min-height:150px
+    
 }
 
 #MenuTop {
@@ -280,7 +291,7 @@ a.estiloBlanco {
 #map {
     
     width: 987px;
-    height:350px;
+    height:450px;
     margin-left: 0;
     margin-right:0;
     overflow: hidden;
@@ -291,7 +302,19 @@ a.estiloBlanco {
 
 .map_legend {z-index:20;position: absolute; }
 
-#queMapa { height:320px; width: 240px;  position:absolute; top:17px; left: 697px; padding: 15px 25px; background: rgba(255,255,255,0.8);color: #000; }
+#queMapa { 
+    height:390px; 
+    width: 220px;  
+    position:absolute; 
+    top:15px; 
+    left: 710px; 
+    padding: 15px 25px; 
+    background: rgba(255,255,255,0.8);
+    border:1px;
+    border-color:#87b8f4;
+    border-style:solid;
+    border-radius:10px;
+    }    
 #queMapa h2 { font-size: 25px; text-align: left; }
 #queMapa h2.mom {font-size:18px; padding-left:0;}
 #queMapa p { font-size: 12px; }
@@ -306,9 +329,27 @@ a.estiloBlanco {
 #queMapa label {font-size:14px;}
 #queMapa input.cps {width:100px;}
 #queMapa .avanzado {font-size:14px; color:#3e7988;}
+#queMapa .close-icon{
+    display:block;
+    box-sizing:border-box;
+    width:20px;
+    height:20px;
+    border-width:3px;
+    border-style: solid;
+    border-color:#87b8f4;
+    border-radius:100%;
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%,  white 56%,transparent 56%, transparent 100%);
+    background-color:#87b8f4;
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
 #subir { font-size: 16px; margin: 40px 0; padding: 15px; text-align: center; width: 146px; }
 
-#grande { font-size: 16px; padding: 10px 15px 15px 15px; width: 105px; }
+#grande { 
+    font-size: 16px; 
+    padding: 10px 10px 10px 10px; 
+    width: 125px; 
+    text-align:center}
 
 #lineaSep01 {
     width: 987px;
@@ -332,6 +373,17 @@ a.estiloBlanco {
     background-color: #cccccc;
     z-index:7;
 }
+#barra_login{
+    margin-top:40px;
+    float:right; 
+    text-align:right;
+    font-size:large;
+    font-family: "Helvetica Neue";
+    color:black;
+    text-decoration:none;
+}
+.logolink{text-decoration:none;}
+
 #login {
     width: 450px;
     height:150px;
@@ -438,6 +490,7 @@ a.estiloBlanco {
      border-radius:5px;
 }
 
+
 .accion {
 	/*height: 10px;*/ 
 	padding: 5px 10px; 
@@ -447,8 +500,9 @@ a.estiloBlanco {
 	double #3E7988;
 	font-weight: bold; 
 	font-size: 12px;
-	float:right; 
-	background: #3E7988;  
+	/*float:right; */
+	background: #87b8f4;
+    text-decoration:none;
 	/*background-image: -moz-linear-gradient(top, #3E7988, #2A5762); 
 	background-image: -webkit-gradient(linear, center top, center bottom, from(#3E7988), to(#2A5762));*/
 }
@@ -496,10 +550,17 @@ a.estiloBlanco {
     z-index:9;
 
 }
-#buscarMapa                                                     {float:left; background: #BA2F06; padding: 1px 10px; margin-bottom: 40px; width: 967px;}
+#buscarMapa{
+    float:left; 
+    background: #1a5eb2;
+    padding: 1px 10px; 
+    margin-bottom: 40px; 
+    width: 967px;}
 #buscarMapa input                                               {width: 360px; margin: 5px 0; height:19px;}
 #buscarMapa .accion                                             {margin-top: 8px; float:left; text-decoration:none;}
-#buscarMapa #geo                                                {background: #669900; border-color: #66b700; float:left;}
+#buscarMapa #geo {
+    background: #89c704;
+    float:left;}
 #buscarMapa #geo:hover                                          {background: #aacb50;float:left;}
 #tools {
     position:relative;
@@ -644,6 +705,26 @@ a.estiloBlanco {
 .item p                                                         {font-size: 11px; line-height: 14px;}
 .item img                                                       {padding-right: 10px; float:left;}
 
+#muestra-item{
+    border-bottom: 1px solid #999;         
+}
+.imagen               
+{
+    width:60px;
+    text-align:center;
+    float:left;
+}
+.descripcion
+{
+    width:300px;
+    float:left;
+}
+.descripcion p {padding-right: 10px;}
+.clear
+{
+    clear:both;
+}
+
 #latDcha {
     position:relative;
     width:240px;
@@ -777,12 +858,13 @@ a.estiloBlanco {
     z-index:36;
 }
 #barraFooter {
-    background: #ccc; 
+    background: #87b8f4;
     width: 980px; 
-    height: 25px; 
-    margin-top:60px;  
+    height: 35px; 
     float:left;
     margin-bottom:15px;
+    font-family: "Glegoo";
+    vertical-align:text-top;
 }
 #avisoLegal {
     position:relative;
@@ -1042,7 +1124,8 @@ a.estiloBlanco {
 	padding-left:5px;
 }
 #barraFooter .footer-element {
-	padding-left: 10px; padding-top:5px;color:black;
+    padding-top: 10px;
+    color:black;
 }
 #barraFooter a {
 	font-weight: bold; font-size: 12px; color:#369;text-decoration:none;	
@@ -1340,3 +1423,5 @@ a.estiloBlanco {
 .placeholder {
     color: #aaa;
 }
+
+

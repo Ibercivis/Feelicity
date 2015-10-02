@@ -457,10 +457,7 @@ msgstr ""
 "corners that hide happy momments of your life.\" \"Start today to collect"
 " and share them. We will build together a different map,we will give life"
 " to a new city <strong>Feelicity</strong></p><p>And when you travel help "
-"us to change the map of other cities...</p><div style=\"margin:35px "
-"35px;\"><a href=\"javascript: register_user();\" class=\"registro\" "
-"\"bordeSoft\" style=\"text-transform: uppercase;\" "
-"id=\"grande\">register</a></div>"
+"us to change the map of other cities..."
 
 #: tedx/templates/common.mako:146
 msgid "title"

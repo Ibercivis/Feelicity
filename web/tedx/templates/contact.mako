@@ -1,37 +1,36 @@
 # -*- coding: utf-8 -*-
-<mako:inherit file="common.mako"/>
-<mako:def name="title()">
+<%inherit file="common.mako"/>
+<%def name="title()">
     Contact
-</mako:def>
-<mako:def name="head()">
+</%def>
+<%def name="head()">
     <link rel="stylesheet" type="text/css" href="/css/view.css" />
 	<script type="text/javascript" src="/js/about.js">
     </script>
-</mako:def>
-<mako:def name="init()">
-</mako:def>
-<mako:def name="content()">
+</%def>
+<%def name="init()">
+</%def>
+<%def name="content()">
     
-	<h3>Ayuda</h3>
+    <h3>${ _(u'Ayuda')}</h3>
 	<hr><br>
 	
-	<h5 style="height:80px; width:175px;">¿Qué es Streetrs?</h5>
+	<h5 style="height:80px; width:175px;">${_(u'¿Qué es Streetrs?')}</h5>
 	<div style="margin-left:50px; margin-right: 50px;">
-		<i>Streetrs</i> es una aplicación web y móvil que permite a los usuarios subir diferentes contenidos (texto, imágenes, links, videos) y geoposicionarlos en cualquier lugar del mundo. 
+        <i>${_(u'Streetrs')}</i> ${_(u'es una aplicación web y móvil que permite a los usuarios subir diferentes contenidos (texto, imágenes, links, videos) y geoposicionarlos en cualquier lugar del mundo. 
 		Además de subir el contenido el usuario se puede descargar una imagen identificativa de su post y usarla como pegatina para ponerla directamente en esa ubicación e identificar de esta manera ese lugar.
 		<!-- Streetrs is an mobile and web application that allows users to upload different type of contents (text, images, videos, links) and positionate them everywhere around the world.
-		The user can also download an identificative image of his post and used it as a sticker putting it directly at the position of the place-->
+		The user can also download an identificative image of his post and used it as a sticker putting it directly at the position of the place-->')}
 	</div>
 	<div style="margin-left:50px; margin-right: 50px;">
-		En el mapa inicial aparecen la posición actual del usuario y las publicaciones que tiene a su alrededor. De esta manera el usuario con su móvil por la calle puede saber en el momento qué publicaciones tiene cerca de su posición, colsultarlas o añadir más datos a la misma.
-		<!-- In the home page there is a map with the current position of the user and the posts around it. That way, the user could go down the street with his mobile phone and know exactly what posts are around him, read or add them some data -->
+        ${_(u'En el mapa inicial aparecen la posición actual del usuario y las publicaciones que tiene a su alrededor. De esta manera el usuario con su móvil por la calle puede saber en el momento qué publicaciones tiene cerca de su posición, colsultarlas o añadir más datos a la misma')}
 	</div>      
 	<br>
 	<div class="clear"></div>
 	
-	<h5 style="height:50px; width:175px;">¿Qué contiene la pegatina?</h5>
+	<h5 style="height:50px; width:175px;">${_(u'¿Qué contiene la pegatina?')}</h5>
 	<div style="margin-left:50px; margin-right: 50px;">
-		La pegatina contiene el logo de <i>tedx</i> y un código bidimiensional <b>QR</b>. El código QR almacena la información del post que uno mismo ha creado en una matriz de puntos. 
+		${_(u'La pegatina contiene el logo de')} <i>${_(u'tedx')}</i> y un código bidimiensional <b>QR</b>. El código QR almacena la información del post que uno mismo ha creado en una matriz de puntos. 
 		Así, cualquier persona que va por la calle y dispone de un móvil con un lector de códigos bidimensionales puede acceder de manera directa al post, leerlo, añadir nuevos comentarios, etc.
 		<!-- The sticker contains the Streetrs logo and a bidimensional code QR. The QR code stores the created comment and a link to the website in a datamatrix.
 		In that way, any person walking down the street and have a mobile phone with a QR reader can access directly to the post, read it, add other contents, etc.-->

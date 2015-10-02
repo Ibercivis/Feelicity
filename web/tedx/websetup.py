@@ -12,13 +12,11 @@ from tedx.model.meta import Session, metadata
 log = logging.getLogger(__name__)
 
 def setup_app(command, conf, vars):
-    
+
     from tedx.model import user
     from tedx.model import place
     from tedx.model import comment
-  
-    
-    
+
     """Place any commands to setup tedx here"""
     # Don't reload the app if it was loaded under the testing environment
     if not pylons.test.pylonsapp:
@@ -29,7 +27,7 @@ def setup_app(command, conf, vars):
     metadata.drop_all(bind=Session.bind, checkfirst=True)
     metadata.create_all(bind=Session.bind)
     log.info("Successfully created")
-    
+
     #===========================================================================
     # log.info("Creating directory tree...")
     # if os.path.isdir(os.path.join(os.getcwd(), 'tedx/public/files')):
@@ -43,13 +41,13 @@ def setup_app(command, conf, vars):
     # os.mkdir(os.path.join(os.getcwd(), 'tedx/public/avatars'))
     # log.info("Successfully created")
     #===========================================================================
-    
+
     #user.User("admin@tedx.com", "admin", "password", "admin")
-    
+
     #psoe_user = user.User("infoambar@ambar.es", "ambar", "ambar")
     #psoe_category = category.Category(psoe_user.nickname)
     #psoe_user.add_category(psoe_category,"admin")
-        
+
     #===========================================================================
     # # Users
     # users = []
@@ -62,7 +60,7 @@ def setup_app(command, conf, vars):
     #    longitude = -0.70 - random.random() * 0.25
     #    db_user = user.User(email, password, nickname, latitude, longitude)
     #    users.append(db_user)
-    # 
+    #
     # # Places
     # for j in range(100):
     #    place_name = "place" + str(i) + str(j)
@@ -76,5 +74,5 @@ def setup_app(command, conf, vars):
     #        db_user = random.choice(users)
     #        db_comment = db_place.add_comment(db_user, latitude, longitude, comment_title, comment_title)
     #===========================================================================
-        
-            
+
+

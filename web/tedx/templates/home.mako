@@ -1,54 +1,57 @@
-# -*- coding: utf-8 -*-
-<mako:inherit file="common.mako"/>
+<%inherit file="common.mako"/>
 
-<mako:def name="title()">
-  ${_(u'home')}
-</mako:def>
+<%def name="title()">
+    Pagina home
+</%def>
 
-<mako:def name="head()">
-  <link rel="stylesheet" type="text/css" href="/css/tablesorterstyle.css" />
-  <link rel="stylesheet" type="text/css" href="/css/home.css" />
-  <script type="text/javascript" src="/js/home.js"></script>
-  <script type="text/javascript" src="/js/jquery.tagcloud.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" type="text/css" href="/css/screen.css" />	
-  <script type="text/javascript">
-    var user = "${c.user}";
-  </script>
-</mako:def>
+<%def name="MainContent()">
 
-<mako:def name="init()"></mako:def>
+        %if not c.user:
+        <div id="queMapa">
+            <h2>${_(u'Controla el agua que bebes')}</h2>
+            
+            <p>${_(u'Si hay algo que merece nuestra atención y cuidado, eso es el agua que bebemos todos los dias. Tanto si vives en un pueblo aislado  o en una ciudad con tramos de tubería muy largos, queremos que nos ayudes a controlar si los niveles de cloro en nuestros grifos son  los adecuados para el consumo. Aquí puedes compartir el resultado de analizar el agua de tu casa, o el de la fuente de tu parque, el que encuentre en tus viajes...')}</p>
 
-<mako:def name="content()">
-  <div class="sidebarIzq">
-    <h3>${_(u'happy_users')}</h3>
-    <div id="users"></div>  
-  </div>
-  
-  <div class="content_center">
-    <h3>${_(u'happy_moments')}</h3>
-    <div id="list"></div>
-    <div id="srToolsDown"></div>
-  </div>
-  
-  <div class="sidebarDer">
-    <div id="logos">
-      <h3>${_(u'idea')}:</h3>	
-      <a href="http://tedxzaragoza.com"><img src="/images/TEDx_logo.png" alt="Logo TEDx Zaragoza" /></a>
-      <h3>${_(u'developed')}:</h3>
-      <a href="http://bifi.es"><img src="/images/BIFI_logo.png" alt="Logo BIFI" /></a>
-      <a href="http://www.ibercivis.es"><img src="/images/logo_fundacion.png" alt="Logo Fundación Ibercivis" /></a>
+            <br><br>
+            <div class="centerize">
+                <a href='/login' class='accion right bordeSoft' style='text-transform: uppercase:' id='grande'>
+                ${_(u'Entrar')}</a>
+            </div>
+
+        </div>
+     %endif
+</%def>
+
+<%def name="head()">
+    <link rel="stylesheet" type="text/css" href="/css/tablesorterstyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+    <script type="text/javascript" src="/js/home.js"></script>
+    <script type="text/javascript" src="/js/jquery.tagcloud.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <script type="text/ javascript">
+         var user = "${c.user}";
+    </script>
+</%def>
+
+<%def name="init()"></%def>
+
+<%def name="content()">
+    <div class="sidebarIzq">
+        <h3>${_(u'Información para Profesores')}</h3>
+        ${_(u'Queremos repartir kits experimentales a todos los centros de Educación Secundaria que lo deseen, pero nuestro presupuesto es limitado. Mandanos un correo a')} <a href="mailto:info@ibercivis.es">info@ibercivis.es</a> ${_(u'indicando en el asunto AQUA y con los detalles de centro y de la persona de contacto')}.
+        <br /><br />
+        ${_(u'Fecha límite para recepción de solicitudes de los centros: 22 de Abril de 2014')}.
+        <br /><br />
+        ${_(u'Nota: en caso de recibir más solicitudes de las que somos capaces de financiar, se dará prioridad a los centros de Zaragoza')}.
     </div>
-
-    <h3>${_(u'follow_us')}:</h3>
-    <a href="http://www.facebook.com/FeelicityApp" target="_blank"><img src="/images/facebook.png"  class="left social" /></a>
-    <a href="http://www.twitter.com/FeelicityApp" target="_blank"><img src="/images/twitter.png" class="left social" /></a>
-    
-    <h3>${_(u'available')}:</h3>
-    <a href="http://itunes.apple.com/app/feelicity/id452958224?mt=8" target="_blank"><img src="/images/imovil.png" class="left" /></a>
-    <a href="https://market.android.com/details?id=com.bifi.feelicity" target="_blank"><img src="/images/androidmovil.png" class="left" /></a>
-
-    <h3>${_(u'happy_cities')}:</h3>
-    <div id="happy_cities"></div>
-  </div>
-
-</mako:def>
+                                                                  
+    <div class="content_center">
+        <h3>${_(u'Muestra de Agua Analizadas')}</h3>
+        <div id="list"></div>
+            <div id="srToolsDown"></div>
+        </div>
+                                                                    
+        <div class="sidebarDer">
+            <%include file="datos.mako"/>
+        </div>
+</%def>

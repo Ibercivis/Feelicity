@@ -6,8 +6,16 @@ var infowindow = new google.maps.InfoWindow();
 var precision = 6;
 var max_zoom = 17;
 
-var green_marker = new google.maps.MarkerImage("/images/icono-maps.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+var green_marker = new google.maps.MarkerImage("/images/drop_white.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
 var red_marker = new google.maps.MarkerImage("/images/icono-maps.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+
+
+var drop_blue  = new google.maps.MarkerImage("/images/drop_blue.png",  new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+var drop_green = new google.maps.MarkerImage("/images/drop_green.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+var drop_brown = new google.maps.MarkerImage("/images/drop_brown.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+var drop_white = new google.maps.MarkerImage("/images/drop_white.png", new google.maps.Size(30, 45), new google.maps.Point(0, 0), new google.maps.Point(15, 25));
+
+
 
 var geolocated = false;
 var current_position_marker;
@@ -36,7 +44,7 @@ var longitude;
 var range_query = false;
 var order = "date";
 var page = 1;
-var page_size = 300;
+var page_size = 5;
 
 var image_extensions = {
     '.bm': true,
@@ -194,7 +202,7 @@ var common_init = function() {
         }
     });
     
-    get_happy_cities();
+    //get_happy_cities();
     
 };
 
@@ -281,14 +289,31 @@ var setPos = function(city,country){
 		});
 	}
 }
+// Get Water Quality based on ph and chlorine
+var getDropQuality = function(ph, chlorine){
+
+
+}
+
+// Get Drop Image
+var getDropImage = function(value){
+
+    if (value >= 6)
+        return "drop_blue";
+    else if(value >=4)
+        return "drop_green";
+    else
+        return "drop_brown";
+}
 
 var view_more = function() {
 	var results = global_places.results;
 	$('#list').empty();
 	for (var i = 0; i < results.length; i++) {
 		var div = $('<div class="item"></div>');
+
 		// Avatar
-		div.append($('<div style="width:70px;float:left;"><img src="' + results[i].avatar + '_small.png?d='+ new Date().getTime()+'"/></div>'));
+		div.append($('<div style="width:71px;float:left;"><img src="' + results[i].avatar + '_small.png?d='+ new Date().getTime()+'"/></div>'));
 		// User name
 		div.append($('<a href="'+results[i].user_name+'">'+ results[i].user_name +'</a>'));
 		// Instant title
@@ -305,11 +330,11 @@ var view_more = function() {
 			ul.append($('<li style="width:85px;"><a href="/view/place?id=' + results[i].place_id +'">' + results[i].num_comments + ' ' +_("comment") +'</a></li>'));
 		}
 		ul.append($('<li style="width:65px;"><a href="#" onclick="add_place_scoring_home(\''+results[i].place_id+'\',1);">' + results[i].positive_scorings + ' '  +_("like") +' </a></li>'));
-		if (results[i].visits != "1") {
-			ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visits") +'</div></li>'));
-		} else {
-			ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visit") +'</div></li>'));
-		}
+		//if (results[i].visits != "1") {
+		//	ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visits") +'</div></li>'));
+		//} else {
+		//	ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visit") +'</div></li>'));
+		//}
 		div2.append(ul);
 		div.append(div2);
 
@@ -361,7 +386,7 @@ var get_places = function() {
 		    	    
 		    	    // Happy users (left bar)
 		    	    for (i = 0; i< users.length; i++){
-		    	    	var div = $('<div class="item left"><div style="width:70px;float:left;"><img src="'+users[i].user_avatar+'_small.png?d='+ new Date().getTime()+'" class="left"/></div><a href="'+users[i].user_name+'">'+users[i].user_name+'</a><p>' +_("has_uploaded") + " " + users[i].user_contents+ " " + _("contents") +' </p></div>');
+		    	    	var div = $('<div class="item left"><div style="width:72px;float:left;"><img src="'+users[i].user_avatar+'_small.png?d='+ new Date().getTime()+'" class="left"/></div><a href="'+users[i].user_name+'">'+users[i].user_name+'</a><p>' +_("has_uploaded") + " " + users[i].user_contents+ " " + _("contents") +' </p></div>');
 		    	    	$('#users').append(div);
 		    	    }
                 }
@@ -388,7 +413,7 @@ var get_places = function() {
                     }
 
                     $('#srToolsDown').append(' ' + _('page') + ': ');
-                    $('#srToolsDown').append($('<input type="text" size="1" value="' + response.current_page + '" onchange="get_page(this.value);"/>'));
+                    $('#srToolsDown').append(' ' + response.current_page + ' ');
                     $('#srToolsDown').append(' ' + _('of') + ' ' + response.pages + ' ');
 
                     if (response.current_page < response.pages && response.pages > 1) {
@@ -396,8 +421,8 @@ var get_places = function() {
                         $('#srToolsDown').append($('<a class="estiloAzul" href="javascript:void(0);" onclick="get_page(' + (response.current_page + 1) + ');">></a> <a class="estiloAzul" href="javascript:void(0);" onclick="get_page(' + response.pages + ');">>></a>'));
                     }
 
-                    $('#srToolsDown').append($('<input type="text" size="1" value="' + page_size + '" onchange="get_page_size(this.value);"/>'));
-                    $('#srToolsDown').append(' ' + _('results_per_page'));
+                    //$('#srToolsDown').append($('<input type="text" size="1" value="' + page_size + '" onchange="get_page_size(this.value);"/>'));
+                    //$('#srToolsDown').append(' ' + _('results_per_page'));
                     
                     // List elements
                     var tbody = $("#list").find('tbody');
@@ -413,113 +438,100 @@ var get_places = function() {
 
                 $('#list').empty();
                 for (var i = 0; i < results.length; i++) {
-                    	// Happy instants (middle bar)
-                    	if (list_mode && i<10) {
-                    		div = $('<div class="item"></div>');
-                    		// Avatar
-                    		div.append($('<div style="width:70px;float:left;"><img src="' + results[i].avatar + '_small.png?d='+ new Date().getTime()+'"/></div>'));
-                    		// User name
-                    		div.append($('<a href="'+results[i].user_name+'">'+ results[i].user_name +'</a>'));
-                    		// Instant title
-                    		div.append($('<a href="/view/place?id=' + results[i].place_id +'"><h4>'+ results[i].place_name +'</h4></a>'));
-                    		// Instant description
-                    		div.append($('<p>'+ results[i].comment_content+'</p>'));
-                    		// Instant date
-                    		var div2 = $('<div class="momentoCont left clear"><p class="clear">'+ results[i].last_update +'</p></div>');
-                    		// Number of comments, likes and visits
-                    		var ul = $('<ul class="clear"></ul>');
-                    		if (results[i].num_comments != "1") {
-                    			ul.append($('<li style="width:85px;"><a href="/view/place?id=' + results[i].place_id +'">' + results[i].num_comments + ' ' +_("comments") +'</a></li>'));
-                    		} else {
-                    			ul.append($('<li style="width:85px;"><a href="/view/place?id=' + results[i].place_id +'">' + results[i].num_comments + ' ' +_("comment") +'</a></li>'));
-                    		}
-                    		ul.append($('<li style="width:65px;"><a href="#" onclick="add_place_scoring_home(\''+results[i].place_id+'\',1);">' + results[i].positive_scorings + ' '  +_("like") +' </a></li>'));
-                    		if (results[i].visits != "1") {
-                    			ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visits") +'</div></li>'));
-                    		} else {
-                    			ul.append($('<li style="width:85px;"><div style="padding-left:5px;" >' + results[i].visits + ' ' +_("visit") +'</div></li>'));
-                    		}
-                    		div2.append(ul);
-                    		div.append(div2);
-	        	    
-                    		$('#list').append(div);
-                    	}
-                    	
-                    	
-                        // Place marker html
-                        if (results[i].place_id != "") {
-                            name = '<a class="estiloAzul" href="/view/place?id=' + results[i].place_id + '&latitude=' + latitude + '&longitude=' + longitude + '">' + results[i].place_name + '</a>';
-                        } else {
-                            name = results[i].place_name;
-                        }
-                        var html = '<table>\
-                        <tr><td colspan="2">'+
-                        name+'</td></tr>\
-                        <tr><td><b>' +
-                        _("author") +
-                        ':</b></td><td><a class="estiloAzul" href="/' + results[i].user_name + '">' +
-                        results[i].user_name +
-                        '</a></td></tr>';
+                    // Happy instants (middle bar)
+                    var data = results[i];
+                    if (list_mode && i  < page_size) {
+                        div = $('<div id="muestra-item"></div>');
+                    
+                        // Avatar
+                        var text_div01 = $('<div class="imagen"><a href="/view/place?id=' + data.place_id +'"><img src="' + '/images/' + getDropImage(data.ph) + '.png'  + '"/></a>');
+                        //text_div01.append($('<div><a href="'+results[i].user_name+'">'+ results[i].user_name +'</a></b><br>'));
+                        text_div01.append($('<div><br>' + _("ph") + ': ' +  data.ph + '<br> ' +  _("Cl") + ': ' + data.chlorine + '</div>'));
+                        div.append($(text_div01));
 
-                        
+                        // Instant title
+                        div02 = $('<div class="descripcion"><a href="/view/place?id=' + data.place_id +'"><h4>' +  data.place_name +'</h4></a></div>');
+                        var text_div02 = $('<p>' + results[i].comment_content + '<br>' + data.last_update + '<br></p>');
 
-                        html += '<tr><td><b>' +
-                        _("last_update") +
-                        ':</b></td><td>' +
-                        results[i].last_update +
-                        ' por ' +
-                        results[i].last_updater_name +
-                        '</td></tr>\
-                        <tr><td><b>' +
-                        _("comments") +
-                        ':</b></td><td>' +
-                        results[i].num_comments +
-                        '</td></tr>\
-                        <tr><td><b>' +
-                        _("visits") +
-                        ':</b></td><td>' +
-                        results[i].visits +
-                        '</td></tr>\
-                        <tr><td><b>' +
-                        _("scoring") +
-                        ':</b></td><td>0</td></tr>';
-                        
-                        if (results[i].comment_image != null){
-                        	html += '<tr><td><img src ="' + results[i].comment_image +'_small.jpg"/></td></tr>\
-                        	</table>';
-                        } else {
-                        	html += '</table>';
-                        }
-                        
+                        // Number of comments, likes and visits
+                        if (results[i].num_comments != "1") {
+                            text_div02.append($('<br><a href="/view/place?id=' + data.place_id +'">' + data.num_comments + ' ' +_("comments") +'</a>'));
+                         } else {
+                            text_div02.append($('<br><a href="/view/place?id=' + data.place_id +'">' + data.num_comments + ' ' +_("comment") +'</a>'));
+                        } 
+                        text_div02.append($('<a href="#" onclick="add_place_scoring_home(\''+data.place_id+'\',1);">' + data.positive_scorings + ' '  +_("like") +' </a>'));
+                        div02.append(text_div02);
+                       
+                        //div02.append($('<img class="image_attachment" src="' + results[i].path + '.jpg" />imagencita</a>'));
+                        div.append(div02);
 
-                        // Place the instant on the google map ???
-                        var marker = drawn_places[results[i].place_id];
-                        if (marker == undefined) {
-                            marker = red_marker;
-                            
-                            marker = create_marker({
+                        if( data.comment_image != null)
+                            div.append($('<br><img class="imagen" src="' + data.comment_image  + '_small.jpg" /></a>'));
+
+                        div.append($('<div class="clear"></div>'));
+
+                        $('#list').append(div);
+                    }
+                    
+                    
+                    // Place marker html
+                    if (results[i].place_id != "") {
+                        name = '<a class="estiloAzul" href="/view/place?id=' + results[i].place_id + '&latitude=' + latitude + '&longitude=' + longitude + '">' + results[i].place_name + 'hoit</a>';
+                    } else {
+                        name = results[i].place_name;
+                    }
+
+                    var html = '<table>\
+                    <tr><td colspan="2">'+
+                    name+'</td></tr>\
+                    <tr><td><b>' +
+                    _("author") +
+                    ':</b></td><td><a class="estiloAzul" href="/' + results[i].user_name + '">' +
+                    results[i].user_name +
+                    '</a></td></tr>';
+
+                    html += 
+                    '<tr><td><b>' + _("last_update") + ':</b></td>' +
+                    '<td>' + results[i].last_update + '</td>' +
+                    '<tr><td><b>' + _("pH") + ':</b></td>' + 
+                    '<td>' + results[i].ph + '</td></tr>' +
+                    '<tr><td><b>' + _("Chlorine") + ':</b></td>' + 
+                    '<td>' + results[i].chlorine + '</td></tr>'
+                    if (results[i].comment_image != null){
+                        html += '<tr><td><img src ="' + results[i].comment_image +'_small.jpg"/></td></tr>\
+                        </table>';
+                    } else {
+                        html += '</table>';
+                    }
+                    if( results[i].ph >= 6)
+                        marker = drop_green;
+                    else if ( results[i].ph >= 4)
+                            marker = drop_blue;
+                        else
+                            marker = drop_brown;
+
+                        marker = create_marker({
                                 position: new google.maps.LatLng(results[i].latitude, results[i].longitude),
                                 icon: marker,
                                 map: map
                             }, infowindow, html);
-                            markers_array.push(marker);
+                        markers_array.push(marker);
 
-                            drawn_places[results[i].place_id] = marker;
-                        }
+                        drawn_places[results[i].place_id] = marker;
 
                         if (list_mode) {
                             var context = {
                                 id: results[i].place_id,
                                 marker: marker
-                            };
+                             };
 
-                            var handler = function( event ) {
+                             var handler = function( event ) {
                                 google.maps.event.trigger(this.marker, 'click');
                                 $('html, body').animate({scrollTop:$('#map').offset().top}, 'slow');
                             };
-                        }
+                         }
                 }
-                if (results.length > 10) {
+                if (results.length > 5) {
             		$('#list').append($('<div class="item"><a href="javascript:void(0);" class="registro bordesoft" style="float:right;color:white;" onclick="view_more();">Ver más</a></div>'));
             	}
 
@@ -707,6 +719,60 @@ $(function() {
 
 var register_user = function() {
     $("#dialog-registration").dialog("open");
+};
+
+
+
+// Registration
+ $(function() {
+    $("#dialog-start").dialog({
+	    modal: true,
+	    autoOpen: false
+    });
+
+    $('#dialog-start-btnAccept').button();
+    $('#dialog-start-imgLoading').hide();
+    $('#dialog-start-btnAccept').click(function() {
+	    if (!$('#dialog-start-txtEmail').attr('value')) {
+	        tedx_alert(_("email_cannot_be_null"));
+	        return;
+	    }
+	    if (!$('#dialog-start-txtContra').attr('value')) {
+	        tedx_alert(_("password_cannot_be_null"));
+	        return;
+	    }
+	    $('#dialog-start-imgLoading').show();
+	    $.ajax({
+	        url: '/common/form_login',
+	        type: 'GET',
+	        async: true,
+	        cache: false,
+            data: { 'login_email' : $('#dialog-start-txtEmail').attr('value'),
+                    'login_password' : $('#dialog-start-txtContra').attr('value')
+            },
+	        success: function(responseText) {
+		        var response = $.parseJSON(responseText);
+		        if (response.status == 'NOK') {
+		            tedx_alert(response.message);
+		        } else {
+		            $("#dialog-start").dialog("close");
+		            tedx_alert(response.message);
+		            window.location = '/';
+		        }
+	        }
+	    });
+    });
+
+    $('#dialog-start-btnCancel').button();
+    $('#dialog-start-btnCancel').click(function() {
+        $('#dialog-start-imgLoading').hide();
+        $("#dialog-start").dialog("close");
+    });
+});
+
+// Start Session
+var register_start = function() {
+    $("#dialog-start").dialog("open");
 };
 
 // alert 

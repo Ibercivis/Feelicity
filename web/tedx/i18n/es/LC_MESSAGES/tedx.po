@@ -26,8 +26,8 @@ msgid "No se ha encontrado un usuario con ese correo electrónico."
 msgstr "No se ha encontrado un usuario con ese correo electrónico."
 
 #: tedx/controllers/common.py:106
-msgid "Nueva contraseña de Feelicity"
-msgstr "Nueva contraseña de Feelicity"
+msgid "Nueva contraseña de AQUA"
+msgstr "Nueva contraseña de AQUA"
 
 #: tedx/controllers/common.py:107
 msgid "Nuevo password: "
@@ -90,8 +90,8 @@ msgid "comment_doesnt_exist"
 msgstr "El comentario no existe"
 
 #: tedx/controllers/content.py:338
-msgid "Momento feliz guardado correctamente."
-msgstr "Momento feliz guardado correctamente."
+msgid "Nueva muestra guardada correctamente."
+msgstr "Nueva muestra guardada correctamente".
 
 #: tedx/controllers/home.py:144
 msgid "user_not_found"
@@ -313,7 +313,7 @@ msgstr "La puntuación se guardó correctamente"
 #: tedx/templates/my_account.mako:109 tedx/templates/profile.mako:44
 #: tedx/templates/search.mako:34 tedx/templates/view.mako:38
 msgid "happy_moments"
-msgstr "Momentos felices"
+msgstr "Muestras"
 
 #: tedx/public/js/content.js:70
 msgid "receivers_cannot_be_null"
@@ -434,7 +434,7 @@ msgstr "Entrar"
 
 #: tedx/templates/common.mako:101
 msgid "login_question"
-msgstr "¿No participas en el mapa de la felicidad?"
+msgstr "¿Quieres subir tu propia medida de análisis?"
 
 #: tedx/templates/common.mako:102 tedx/templates/register.mako:4
 msgid "register"
@@ -450,7 +450,7 @@ msgstr "Mi cuenta"
 
 #: tedx/templates/common.mako:125 tedx/templates/common.mako:144
 msgid "new_place"
-msgstr "Nuevo momento feliz"
+msgstr "Nuevo muestra"
 
 #: tedx/templates/common.mako:128
 msgid "log_out"
@@ -459,13 +459,17 @@ msgstr "Salir"
 #: tedx/templates/common.mako:142
 msgid "what_map"
 msgstr ""
-"<h2>Tus momentos más preciados en Feelicity</h2><p>Tu ciudad está llena "
-"de rincones que esconden momentos felices de tu vida.Empieza hoy mismo a "
-"coleccionarlos y compartirlos. Construiremos juntos un mapa distinto, "
-"daremos vida a una nueva ciudad <strong>Feelicity</strong></p><p>Y cuando"
-" viajes ayuda a cambiar el mapa de otras ciudades...</p><div "
-"style=\"margin:35px 35px;\"><a href=\"javascript: register_user();\" "
-"class=\"registro\" \"bordeSoft\" style=\"text-transform: uppercase;\" "
+"<h2>Controla el agua que bebes</h2><p>Si hay algo que merece nuestra"
+"atención y cuidado, eso es el agua que bebemos todos los dias. Tanto"
+"si vives en un pueblo aislado  o en una ciudad con tramos de tubería"
+"muy largos, queremos que nos ayudes a controlar si los niveles de"
+"cloro en nuestros grifos son  los adecuados para el consumo. Aquí"
+"puedes compartir el resultado de analizar el agua de tu casa, o el"
+"de la fuente de tu parque, el que encuentre en tus viajes..."
+"<div style=\"margin:35px 35px;\"><a href=\"javascript: register_user();\" "
+"class=\"accion right bordeSoft" style=\"text-transform: uppercase;\" "
+"id=\"grande\">entrar</a><a href=\"javascript: register_start();\" "
+"class=\"accion left bordeSoft" style=\"text-transform: uppercase;\" "
 "id=\"grande\">registrarse</a></div>"
 
 #: tedx/templates/common.mako:146
@@ -571,8 +575,8 @@ msgid "woman"
 msgstr "Mujer"
 
 #: tedx/templates/common.mako:268
-msgid "Contacta con el equipo de Feelicity"
-msgstr "Contacta con el equipo de Feelicity"
+msgid "Contacta con el equipo de AQUA"
+msgstr "Contacta con el equipo de AQUA"
 
 #: tedx/templates/common.mako:284
 msgid "Contenido"
@@ -592,7 +596,7 @@ msgstr "Aceptar"
 
 #: tedx/templates/content.mako:4
 msgid "new_streetit"
-msgstr "Nuevo lugar feliz"
+msgstr "Nueva muestra"
 
 #: tedx/templates/content.mako:32 tedx/templates/view.mako:30
 msgid "sending_processing_please_wait"
@@ -600,7 +604,7 @@ msgstr "Enviando y procesando los archivos adjuntos, por favor, espere"
 
 #: tedx/templates/content.mako:38
 msgid "streetit_name"
-msgstr "Nuevo lugar feliz"
+msgstr "Nueva muestra"
 
 #: tedx/templates/content.mako:46 tedx/templates/view.mako:52
 msgid "comment_content"
@@ -933,7 +937,7 @@ msgstr "Inicio"
 
 #: tedx/templates/home.mako:22 tedx/templates/search.mako:28
 msgid "happy_users"
-msgstr "usuarios felices"
+msgstr "usuarios"
 
 #: tedx/templates/home.mako:34 tedx/templates/my_account.mako:118
 #: tedx/templates/profile.mako:52 tedx/templates/search.mako:43
@@ -963,7 +967,7 @@ msgstr "Disponible para"
 #: tedx/templates/profile.mako:63 tedx/templates/search.mako:54
 #: tedx/templates/view.mako:134
 msgid "happy_cities"
-msgstr "ciudades felices"
+msgstr "ciudades"
 
 #: tedx/templates/my_account.mako:28 tedx/templates/profile.mako:4
 #: tedx/templates/profile.mako:24 tedx/templates/profile.mako:27
@@ -1013,4 +1017,3 @@ msgstr "Añadir comentario"
 #: tedx/templates/view.mako:104
 msgid "login_first_to_comment"
 msgstr "Debes hacer login primero para poder comentar."
-

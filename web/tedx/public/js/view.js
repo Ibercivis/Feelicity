@@ -68,28 +68,8 @@ var get_place_data = function() {
                 if (mode == 'map') {
                     map.setCenter(new google.maps.LatLng(place.latitude, place.longitude));
                     map.setZoom(max_zoom);
-                }
+                 }
 		
-                $('#srToolsDown').empty();
-
-                if (response.current_page > 1 && response.pages > 1) {
-                    $('#srToolsDown').append($('<a class="estiloAzul" href="javascript:void(0);" onclick="get_place_page(1);"><<</a> <a class="estiloAzul" href="javascript:void(0);" onclick="get_place_page(' + (response.current_page - 1) + ');"><</a>'));
-                    $('#srToolsDown').append(' ');
-                }
-
-                $('#srToolsDown').append(' ' + _('page') + ': ');
-                $('#srToolsDown').append($('<input type="text" size="1" value="' + response.current_page + '" onchange="get_place_page(this.value);"/>'));
-                $('#srToolsDown').append(' ' + _('of') + ' ' + response.pages + ' ');
-
-                if (response.current_page < response.pages && response.pages > 1) {
-                    $('#srToolsDown').append(' ');
-                    $('#srToolsDown').append($('<a class="estiloAzul" href="javascript:void(0);" onclick="get_place_page(' + (response.current_page + 1) + ');">></a> <a class="estiloAzul" href="javascript:void(0);" onclick="get_place_page(' + response.pages + ');">>></a>'));
-                }
-
-                $('#srToolsDown').append($('<input type="text" size="1" value="' + place_page_size + '" onchange="get_place_page_size(this.value);"/>'));
-                $('#srToolsDown').append(' ' + _('results_per_page'));
-
-                
                 // Place comments
                 var comments = $('#list');
                 comments.empty();
@@ -99,36 +79,35 @@ var get_place_data = function() {
                 var download_sticker_string = _("download_sticker");
                 var download_video_string = _("download_video");
                 var remove_string = _("remove");
-                
+               
+                // Add main place
+                var sample = $('<div id="muestra-item"></div>');
+                sample.append($('<div class="imagen"><img src="' + '/images/' + getDropImage(place.ph) + '.png'  + '"/><br>' + _("ph") + ': ' + place.ph + '<br> ' +  _("Cl") + ': ' + place.chlorine + '</div>'));
+
+                sample.append($('<div class="descripcion"><h4>' +  place.place_name +'</h4></a><p>' + place.comment_content + '<br>' + place.last_update + '<br></p></div>'));
+
+                if( place.comment_image != null)
+                    sample.append($('<img class="imagen" src="' + place.comment_image  + '_small.jpg" /></a>'));
+                sample.append($('<div class="clear"></div>'));
+
+                comments.append(sample); 
+                //comments.append('<h4 class="left clear comm"><br>' +  _("Comentarios") + '</h4>');
+
                 // Place comments
                 for (var i = 0; i < results.length; i++) {
-		    // After the happy instant we should place the comments title
-		    if (i == 1) comments.append('<h4 class="left clear comm">Comentarios:</h4>');
+		            // After the happy instant we should place the comments title
+                    var comment_data = results[i];
+                    var comment_description = '';
+                    if (comment_data.comment_content != undefined){
+                        comment_description = replace_links(comment_data.comment_content);}
 
-		    // Happy instant with comments
-		    var comment_data = results[i];
-		    var comment_title = place.place_name;
-		    var comment_description = '';
-		    if (comment_data.comment_content != undefined) {
-			comment_description = replace_links(comment_data.comment_content);
-		    }
+                    var comment = $('<div id="muestra-item"></div>');
+                    comment.append($('<div class="imagen">&nbsp;</div>'));
+                    comment.append($('<div class="descripcion"><h4>' +  comment_data.user_name +'</h4></a><p>' + comment_description  + '<br>' +  comment_data.last_update + '<br></p></div>'));
 
-		    var comment = $('<div class="item"></div>');
-		    if (!comment_data.deleted_on) {
-			comment.append($('<div style="width:70px;float:left;"><img src="' + comment_data.user_avatar + '_small.png?d=' + new Date().getTime() + '"/></div>'));
-			comment.append($('<a href="../' + comment_data.user_name + '">' + comment_data.user_name + '</a>'));
-			if (i == 0) {
-			    comment.append($('<h4>'+ comment_title +'</h4>'));
-			}
-			comment.append($('<p>'+ comment_description + '</p>'));
-			var comment_details = $('<div class="momentoCont left clear"><p class="clear">'+ comment_data.last_update + '</p></div>');
-			comment_details.append(create_actions(place, comment_data, i));
-			comment.append(comment_details);
-			comment.append(create_attachments(comment_data.files));
-		    } else {
-			comment.append($('<div>' + _('comment_removed_on') + ' ' + results[i].deleted_on + '</div>'));
-		    }
-		    comments.append(comment);
+                    // Faltaria poner la imagen
+                    comment.append($('<div class="clear"></div>'));
+                    comments.append(comment);
                 }
 
                 // Place marker html
@@ -146,8 +125,6 @@ var get_place_data = function() {
                 place.user_name +
                 '</a></td></tr>';
 
-                
-
                 html += '<tr><td><b>' +
                 _("last_update") +
                 ':</b></td><td>' +
@@ -163,13 +140,13 @@ var get_place_data = function() {
                 <tr><td><b>' +
                 _("visits") +
                 ':</b></td><td>' +
-                place.visits +
+                place.visits + 
                 '</td></tr>\
                 <tr><td><b>' +
                 _("scoring") +
                 ':</b></td><td>'+place.positive_scorings+'</td></tr>';
                 
-                if (place.comment_image != null){
+                if (place. comment_image != null){
                 	html += '<tr><td><img src ="' + place.comment_image +'_small.jpg"/></td></tr>\
                 	</table>';
                 } else {
@@ -179,7 +156,14 @@ var get_place_data = function() {
                 var marker = drawn_places[place.place_id];
                 if (marker == undefined) {
                     
-                    var marker = red_marker;
+
+                    var marker;
+                    if (place.ph >= 6)
+                        marker = drop_blue;
+                    else if (place.ph >=4)
+                        marker = drop_green;
+                    else 
+                        marker = drop_brown;
                     
 
                     var marker = create_marker({

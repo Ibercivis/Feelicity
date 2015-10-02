@@ -26,27 +26,27 @@ import smtplib, simplejson, cgi, os
 class BaseController(WSGIController):
     requires_auth = False
     requires_admin = False
-    
-    def __before__(self, controller, action):        
+
+    def __before__(self, controller, action):
         if 'lang' not in session:
             session['lang'] = 'es'
             #user_agent_language = request.languages[0][0:2]
             #if user_agent_language in app_globals.languages:
             #    session['lang'] = user_agent_language
             session.save()
-        
+
         set_lang(session['lang'])
-        
+
         c.user = None
         if 'user_id' in session:
             c.user = meta.Session.query(User).filter_by(id = session['user_id']).first()
-            
+
         if self.requires_auth and not c.user:
             return redirect(url(controller=''))
-            
+
         if self.requires_admin and (not c.user or c.user.type != "admin"):
             return redirect(url(controller=''))
-            
+
     def prm(self, param):
         if request.params.get(param) != None:
             return unicode(cgi.escape(request.params.get(param))).encode('utf8')
