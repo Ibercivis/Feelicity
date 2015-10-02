@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2010 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources>
+  <string name="app_name">Feelicity</string>
+  <string name="btn_map_mode">Mapa</string>
+  <string name="btn_list_mode">Lista</string>
+  <string name="btn_search">Buscar</string>
+  <string name="msg_you_are_here">Estás aquí</string>
+  <string name="msg_author">Autor</string>
+  <string name="msg_last_update">Última actualización</string>
+  <string name="msg_comments">Comentarios</string>
+  <string name="msg_visits">Visitas</string>
+  <string name="msg_scorings">Valoraciones</string>
+  <string name="msg_comment_content_mandatory">El contenido del comentario es obligatorio</string>
+  <string name="msg_uploading_processing_data">Enviando y procesando datos...</string>
+  <string name="msg_place_saved_successfully">Lugar guardado correctamente</string>
+  <string name="msg_name_mandatory">El nombre es obligatorio</string>
+  <string name="msg_place_geolocation_not_set">No ha indicado la posición del lugar, por favor, clica en Ver mapa</string>
+  <string name="msg_comment_saved_successfully">Comentario guardado correctamente</string>
+  <string name="msg_email_mandatory">El email es obligatorio</string>
+  <string name="msg_nickname_mandatory">El nickname es obligatorio</string>
+  <string name="msg_password_mandatory">La contraseña es obligatoria</string>
+  <string name="msg_password_confirmation_mandatory">La confirmación de contraseña es obligatoria</string>
+  <string name="msg_password_confirmation_doesnt_match">La confirmación de contraseña no coincide</string>
+  <string name="msg_loading">Cargando</string>
+  <string name="msg_by">por</string>
+  <string name="msg_vote_saved_successfully">Tu voto se ha guardado correctamente</string>
+  
+  <string name="msg_email">Email:</string>
+  <string name="msg_user_email">Email de usuario</string>
+  <string name="msg_password">Contraseña:</string>
+  <string name="msg_user_password">Contraseña de usuario</string>
+  <string name="btn_enter">Entrar</string>
+  <string name="btn_register">Registrarse</string>
+  <string name="msg_choose_category">Elegir categoría</string>
+  <string name="msg_all_categories">Todas</string>
+  <string name="btn_view">Ver</string>
+  <string name="btn_close">Cerrar</string>
+  <string name="msg_scan_status">Coloque el código dentro del rectángulo para escanearlo.</string>
+  <string name="msg_title">Título:</string>
+  <string name="btn_save">Guardar</string>
+  <string name="btn_show_map">Ver mapa</string>
+  <string name="btn_attachments">Adjuntos</string>
+  <string name="msg_comment_content">Contenido:</string>
+  <string name="msg_name">Nombre:</string>
+  <string name="btn_in_situ">In situ</string>
+  <string name="btn_private">Privado</string>
+  <string name="msg_nickname">Nickname:</string>
+  <string name="msg_confirm_password">Confirmar contraseña:</string>
+  <string name="btn_send">Enviar</string>
+  <string name="btn_cancel">Cancelar</string>
+  <string name="msg_enter_text_search">Introduce texto a buscar</string>
+  <string name="btn_add_image">Añadir imagen</string>
+  <string name="btn_add_video">Añadir vídeo</string>
+  <string name="btn_new_comment">Nuevo comentario</string>
+  <string name="btn_view_comments">Ver comentarios</string>
+  <string name="btn_notify">Notificar</string>
+  <string name="msg_mandatory_field">Campo obligatorio</string>
+  <string name="msg_of">de</string>
+  <string name="msg_message">Mensaje:</string>
+  
+  <string name="msg_add_place">Nuevo lugar</string>
+  <string name="msg_scan_qr">Escanear QR</string>
+  <string name="msg_my_account">Mi cuenta</string>
+  <string name="msg_recipient">Email de destinatario</string>
+  
+  <string name="msg_you_must_login">Debe loguearse</string>
+  <string name="msg_sending_vote">Enviando voto</string>
+  <string name="btn_login">Login</string>
+  <string name="msg_categories">Categorías</string>
+  <string name="msg_profiles">Perfiles</string>
+  <string name="msg_none">Ninguno</string>
+  <string name="btn_category">Categoría</string>
+  <string name="msg_image">Imagen:</string>
+  <string name="msg_incorrect_youtube_link">El enlace de Youtube introducido no es válido</string>
+  <string name="btn_avatar">Avatar</string>
+  <string name="msg_logout">Salir</string>
+  <string name="btn_add_youtube">Añadir youtube</string>
+  <string name="btn_new_feelicity">Nuevo feelicity</string>
+</resources>

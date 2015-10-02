@@ -1,0 +1,54 @@
+span.striked {
+	text-decoration: line-through;
+}
+
+.xmpl {
+	height:100%;
+	list-style:none outside none; 
+	padding:0;
+}
+
+
+
+
+#delicious {
+	display: none;
+}
+
+
+
+.smallest {
+	font-size : 10px;
+	float:left;	
+	padding-left:5px;
+	color: #c47272;
+}
+
+.small {
+	font-size : 13px;
+	float:left;	
+	padding-left:5px;
+	color: #c66a6a;
+}
+
+.medium {
+	font-size : 16px;
+	float:left;	
+	padding-left:5px;
+	color: #c65d5d;
+}
+
+.large {
+	font-size : 19px;
+	float:left;	
+	padding-left:5px;
+	color: #c44e4e;
+}
+
+.largest {
+	font-size : 22px;
+	float:left;	
+	padding-left:5px;
+	color: #A42A2A;
+}
+

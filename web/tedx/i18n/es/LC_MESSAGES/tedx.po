@@ -1,0 +1,1016 @@
+# Spanish translations for tedx.
+# Copyright (C) 2010 ORGANIZATION
+# This file is distributed under the same license as the tedx project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tedx 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-09-15 17:59+0200\n"
+"PO-Revision-Date: 2011-07-29 14:09+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: tedx/controllers/common.py:31 tedx/controllers/common.py:44
+msgid "login_error"
+msgstr "Nombre de usuario o contraseña incorrectos"
+
+#: tedx/controllers/common.py:90
+msgid "No se ha encontrado un usuario con ese correo electrónico."
+msgstr "No se ha encontrado un usuario con ese correo electrónico."
+
+#: tedx/controllers/common.py:106
+msgid "Nueva contraseña de Feelicity"
+msgstr "Nueva contraseña de Feelicity"
+
+#: tedx/controllers/common.py:107
+msgid "Nuevo password: "
+msgstr "Nueva password: "
+
+#: tedx/controllers/common.py:117
+msgid ""
+"No se ha podido enviar el correo electrónico a la dirección indicada. "
+"Intentelo de nuevo más tarde."
+msgstr ""
+"No se ha podido enviar el correo electrónico a la dirección indicada. "
+"Intentelo de nuevo más tarde."
+
+#: tedx/controllers/common.py:154
+msgid ""
+"No se ha podido enviar el mensaje correctamente. Intentelo de nuevo más "
+"tarde."
+msgstr ""
+"No se ha podido enviar el mensaje correctamente. Intentelo de nuevo más "
+"tarde."
+
+#: tedx/controllers/common.py:156
+msgid ""
+"Mensaje enviado correctamente. Nos pondremos en contacto contigo lo antes"
+" posible."
+msgstr ""
+"Mensaje enviado correctamente. Nos pondremos en contacto contigo lo antes"
+" posible."
+
+#: tedx/controllers/content.py:58 tedx/controllers/content.py:104
+#: tedx/controllers/content.py:118 tedx/controllers/content.py:255
+msgid "you_must_login_to_add_content"
+msgstr "Debes loguearte para añadir contenido"
+
+#: tedx/controllers/content.py:63 tedx/controllers/view.py:140
+#: tedx/controllers/view.py:159
+msgid "error"
+msgstr "Error"
+
+#: tedx/controllers/content.py:123
+msgid "no_place_associated"
+msgstr "No hay un lugar asociado"
+
+#: tedx/controllers/content.py:126
+msgid "empty_comment"
+msgstr "Comentario vacío"
+
+#: tedx/controllers/content.py:180 tedx/controllers/content.py:297
+#: tedx/controllers/my_account.py:192 tedx/public/js/content.js:232
+#: tedx/public/js/my_account.js:295 tedx/public/js/view.js:577
+msgid "file_selected_is_not_an image"
+msgstr "El fichero seleccionado no es una imagen, se ignorará"
+
+#: tedx/controllers/content.py:222 tedx/controllers/my_account.py:235
+msgid "error_saving_file"
+msgstr "Error guardando el archivo, se ignorará"
+
+#: tedx/controllers/content.py:230 tedx/controllers/view.py:120
+msgid "comment_doesnt_exist"
+msgstr "El comentario no existe"
+
+#: tedx/controllers/content.py:338
+msgid "Momento feliz guardado correctamente."
+msgstr "Momento feliz guardado correctamente."
+
+#: tedx/controllers/home.py:144
+msgid "user_not_found"
+msgstr "Usuario no encontrado"
+
+#: tedx/controllers/home.py:158
+msgid "anonymous"
+msgstr "Anónimo"
+
+#: tedx/controllers/my_account.py:35 tedx/controllers/my_account.py:62
+msgid "couldnt_save_profile"
+msgstr "No se pudo guardar el perfil"
+
+#: tedx/controllers/my_account.py:60
+msgid "data_successfully_saved"
+msgstr "Los datos se guardaron correctamente"
+
+#: tedx/controllers/my_account.py:69 tedx/controllers/my_account.py:90
+#: tedx/controllers/profile.py:31 tedx/controllers/profile.py:57
+msgid "couldnt_get_info"
+msgstr "No se pudieron obtener los datos"
+
+#: tedx/controllers/my_account.py:97
+msgid "couldnt_get_location"
+msgstr "El sistema no pudo geolocalizarle"
+
+#: tedx/controllers/my_account.py:169
+msgid "you_must_login"
+msgstr "Debes loguearte"
+
+#: tedx/controllers/profile.py:36 tedx/controllers/user.py:17
+#: tedx/controllers/user.py:28 tedx/controllers/user.py:49
+msgid "you_must_be_logged"
+msgstr "Debes loguearte"
+
+#: tedx/controllers/register.py:24 tedx/public/js/common.js:655
+#: tedx/public/js/common.js:736
+msgid "email_cannot_be_null"
+msgstr "El email no puede estar vacío"
+
+#: tedx/controllers/register.py:26 tedx/public/js/common.js:659
+msgid "password_cannot_be_null"
+msgstr "La contraseña no puede estar vacía"
+
+#: tedx/controllers/register.py:30
+msgid "email_already_registered"
+msgstr "El email ya está registrado"
+
+#: tedx/controllers/register.py:36
+msgid "nickname_already_registered"
+msgstr "El nickname ya está registrado"
+
+#: tedx/controllers/register.py:43
+msgid "successfully_registered"
+msgstr "Registrado correctamente"
+
+#: tedx/controllers/tag.py:18
+msgid "empty_search"
+msgstr "Búsqueda vacía"
+
+#: tedx/controllers/user.py:33 tedx/controllers/user.py:55
+#: tedx/controllers/view.py:61 tedx/controllers/view.py:115
+#: tedx/controllers/view.py:171 tedx/controllers/view.py:187
+msgid "not_id_received"
+msgstr "No se recibió identificador"
+
+#: tedx/controllers/user.py:37
+msgid "not_allowed_to_follow"
+msgstr "No puedes seguir a este usuario"
+
+#: tedx/controllers/user.py:41
+msgid "already_following"
+msgstr "Ya estás siguiendo a este usuario"
+
+#: tedx/controllers/user.py:44
+msgid "now_following"
+msgstr "Ahora estás siguiendo a este usuario"
+
+#: tedx/controllers/user.py:64 tedx/controllers/user.py:67
+msgid "currently_not_following"
+msgstr "Ya no estás siguiendo a este usuario"
+
+#: tedx/controllers/view.py:66
+msgid "place_doesnt_exist"
+msgstr "El lugar no existe"
+
+#: tedx/controllers/view.py:168 tedx/controllers/view.py:184
+msgid "you_must_login_to_vote"
+msgstr "Debes loguearte para votar"
+
+#: tedx/controllers/view.py:175
+msgid "you_have_already_voted_this_place"
+msgstr "Ya has votado este lugar"
+
+#: tedx/controllers/view.py:191
+msgid "you_have_already_voted_this_comment"
+msgstr "Ya has votado este comentario"
+
+#: tedx/public/js/common.js:253 tedx/public/js/common.js:258
+#: tedx/public/js/content.js:345 tedx/public/js/content.js:350
+msgid "you_are_here"
+msgstr "Estás aquí"
+
+#: tedx/public/js/common.js:305 tedx/public/js/common.js:434
+#: tedx/public/js/common.js:476 tedx/public/js/common.js:1083
+#: tedx/public/js/view.js:156
+msgid "comments"
+msgstr "Comentarios"
+
+#: tedx/public/js/common.js:307 tedx/public/js/common.js:436
+msgid "comment"
+msgstr "Comentario"
+
+#: tedx/public/js/common.js:309 tedx/public/js/common.js:438
+#: tedx/public/js/common.js:1085
+msgid "like"
+msgstr "Me gusta"
+
+#: tedx/public/js/common.js:311 tedx/public/js/common.js:440
+#: tedx/public/js/common.js:481 tedx/public/js/common.js:1084
+#: tedx/public/js/view.js:161
+msgid "visits"
+msgstr "Visitas"
+
+#: tedx/public/js/common.js:313 tedx/public/js/common.js:442
+msgid "visit"
+msgstr "Visita"
+
+#: tedx/public/js/common.js:327
+msgid "searching_for_results"
+msgstr "Buscando resultados"
+
+#: tedx/public/js/common.js:366
+msgid "has_uploaded"
+msgstr "Has subido"
+
+#: tedx/public/js/common.js:366
+msgid "contents"
+msgstr "contenidos"
+
+#: tedx/public/js/common.js:377
+msgid "results_found_for"
+msgstr "resultados encontrados para"
+
+#: tedx/public/js/common.js:380
+msgid "results_found_in_this_map_area"
+msgstr "resultados encontrados en este área del mapa"
+
+#: tedx/public/js/common.js:392 tedx/public/js/view.js:80
+msgid "page"
+msgstr "Página"
+
+#: tedx/public/js/common.js:394 tedx/public/js/view.js:82
+#: tedx/templates/profile.mako:24
+msgid "of"
+msgstr "de"
+
+#: tedx/public/js/common.js:402 tedx/public/js/view.js:90
+msgid "results_per_page"
+msgstr "resultados por página"
+
+#: tedx/public/js/common.js:461 tedx/public/js/view.js:141
+msgid "author"
+msgstr "Autor"
+
+#: tedx/public/js/common.js:469 tedx/public/js/view.js:149
+msgid "last_update"
+msgstr "Última actualización"
+
+#: tedx/public/js/common.js:486 tedx/public/js/view.js:166
+msgid "scoring"
+msgstr "Puntuación"
+
+#: tedx/public/js/common.js:531
+msgid "you_have_no_streetits"
+msgstr "No tienes streetits"
+
+#: tedx/public/js/common.js:534
+msgid "no_results_found_for"
+msgstr "No se encontraron resultados."
+
+#: tedx/public/js/common.js:537
+msgid "no_results_found_in_this_map_area"
+msgstr "No se encontraron resultados en este área del mapa"
+
+#: tedx/public/js/common.js:663
+msgid "wrong_password_confirmation"
+msgstr "Confirmación de contraseña incorrecta"
+
+#: tedx/public/js/common.js:667
+msgid "nickname_cannot_be_null"
+msgstr "El nickname no puede estar vacío"
+
+#: tedx/public/js/common.js:821 tedx/public/js/content.js:57
+msgid "place_name_cannot_be_null"
+msgstr "El nombre del lugar no puede estar vacío"
+
+#: tedx/public/js/common.js:825 tedx/public/js/content.js:61
+#: tedx/public/js/view.js:479
+msgid "comment_content_cannot_be_null"
+msgstr "El comentario no puede estar vacío"
+
+#: tedx/public/js/common.js:830 tedx/public/js/content.js:66
+msgid "location_cannot_be_null"
+msgstr "Debe localizar el lugar en el mapa"
+
+#: tedx/public/js/common.js:850 tedx/public/js/content.js:30
+#: tedx/public/js/content.js:270 tedx/public/js/view.js:35
+#: tedx/public/js/view.js:603
+msgid "url_is_not_valid"
+msgstr "El enlace que ha introducido no es un enlace a youtube válido"
+
+#: tedx/public/js/common.js:1031 tedx/public/js/view.js:529
+#: tedx/public/js/view.js:551
+msgid "scoring_successfully_saved"
+msgstr "La puntuación se guardó correctamente"
+
+#: tedx/public/js/common.js:1082 tedx/templates/home.mako:27
+#: tedx/templates/my_account.mako:109 tedx/templates/profile.mako:44
+#: tedx/templates/search.mako:34 tedx/templates/view.mako:38
+msgid "happy_moments"
+msgstr "Momentos felices"
+
+#: tedx/public/js/content.js:70
+msgid "receivers_cannot_be_null"
+msgstr "El email no puede estar vacío"
+
+#: tedx/public/js/content.js:237 tedx/public/js/view.js:582
+msgid "file_selected_is_not_a_video"
+msgstr "El fichero seleccionado no es un vídeo, se ignorará"
+
+#: tedx/public/js/content.js:294
+msgid "place_saved"
+msgstr "El lugar se guardó correctamente"
+
+#: tedx/public/js/my_account.js:61 tedx/public/js/my_account.js:76
+msgid "unfollow"
+msgstr "No seguir"
+
+#: tedx/public/js/my_account.js:64 tedx/public/js/profile.js:61
+msgid "You are not currently following anyone"
+msgstr "No estás siguiendo a nadie"
+
+#: tedx/public/js/my_account.js:79 tedx/public/js/profile.js:70
+msgid "You are not currently being followed by anyone"
+msgstr "No estás siendo seguido por nadie"
+
+#: tedx/public/js/my_account.js:128
+msgid "join_categories"
+msgstr "Solicitar ingreso"
+
+#: tedx/public/js/my_account.js:130
+msgid "There are no pending categories to join"
+msgstr "No hay categorías pendientes"
+
+#: tedx/public/js/my_account.js:156 tedx/templates/common.mako:211
+#: tedx/templates/common.mako:262 tedx/templates/common.mako:293
+#: tedx/templates/common.mako:358
+msgid "accept"
+msgstr "Aceptar"
+
+#: tedx/public/js/my_account.js:157
+msgid "reject"
+msgstr "Rechazar"
+
+#: tedx/public/js/my_account.js:159
+msgid "There are no pending requests"
+msgstr "No hay peticiones pendientes"
+
+#: tedx/public/js/my_account.js:313
+msgid "error_changing_password"
+msgstr "Error cambiando la contraseña"
+
+#: tedx/public/js/notification.js:25
+msgid "notification_sent"
+msgstr "Notificación enviada"
+
+#: tedx/public/js/view.js:98 tedx/templates/notification.mako:4
+#: tedx/templates/notification.mako:43
+msgid "notify"
+msgstr "Notificar"
+
+#: tedx/public/js/view.js:99
+msgid "download_sticker"
+msgstr "Descargar pegatina"
+
+#: tedx/public/js/view.js:100 tedx/public/js/view.js:325
+msgid "download_video"
+msgstr "Descargar vídeo"
+
+#: tedx/public/js/view.js:101 tedx/public/js/view.js:254
+#: tedx/public/js/view.js:258 tedx/templates/my_account.mako:38
+msgid "remove"
+msgstr "Eliminar"
+
+#: tedx/public/js/view.js:126
+msgid "comment_removed_on"
+msgstr "Comentario eliminado el"
+
+#: tedx/public/js/view.js:615
+msgid "comment_successfully_saved"
+msgstr "El comentario se guardó correctamente"
+
+#: tedx/public/js/view.js:654
+msgid "comment_successfully_removed"
+msgstr "El comentario se eliminó correctamente"
+
+#: tedx/templates/common.mako:48
+msgid "iphone_application_exists"
+msgstr "Existe una aplicación para iPhone/iPad"
+
+#: tedx/templates/common.mako:55
+msgid "android_application_exists"
+msgstr "Existe una aplicación para Android"
+
+#: tedx/templates/common.mako:77
+msgid "Has creado tu contenido con éxito."
+msgstr "Has creado tu contenido con éxito."
+
+#: tedx/templates/common.mako:77
+msgid "¿Quieres compartirlo?"
+msgstr "¿Quieres compartirlo?"
+
+#: tedx/templates/common.mako:95
+msgid "usuario / email"
+msgstr "Usuario / email"
+
+#: tedx/templates/common.mako:96 tedx/templates/common.mako:226
+#: tedx/templates/my_account.mako:54 tedx/templates/register.mako:31
+msgid "password"
+msgstr "Contraseña"
+
+#: tedx/templates/common.mako:97
+msgid "forgotten_password"
+msgstr "¿Has olvidado tu contraseña?"
+
+#: tedx/templates/common.mako:98
+msgid "log_in"
+msgstr "Entrar"
+
+#: tedx/templates/common.mako:101
+msgid "login_question"
+msgstr "¿No participas en el mapa de la felicidad?"
+
+#: tedx/templates/common.mako:102 tedx/templates/register.mako:4
+msgid "register"
+msgstr "Registrarse"
+
+#: tedx/templates/common.mako:109
+msgid "hello"
+msgstr "¡Hola"
+
+#: tedx/templates/common.mako:124 tedx/templates/my_account.mako:4
+msgid "my_account"
+msgstr "Mi cuenta"
+
+#: tedx/templates/common.mako:125 tedx/templates/common.mako:144
+msgid "new_place"
+msgstr "Nuevo momento feliz"
+
+#: tedx/templates/common.mako:128
+msgid "log_out"
+msgstr "Salir"
+
+#: tedx/templates/common.mako:142
+msgid "what_map"
+msgstr ""
+"<h2>Tus momentos más preciados en Feelicity</h2><p>Tu ciudad está llena "
+"de rincones que esconden momentos felices de tu vida.Empieza hoy mismo a "
+"coleccionarlos y compartirlos. Construiremos juntos un mapa distinto, "
+"daremos vida a una nueva ciudad <strong>Feelicity</strong></p><p>Y cuando"
+" viajes ayuda a cambiar el mapa de otras ciudades...</p><div "
+"style=\"margin:35px 35px;\"><a href=\"javascript: register_user();\" "
+"class=\"registro\" \"bordeSoft\" style=\"text-transform: uppercase;\" "
+"id=\"grande\">registrarse</a></div>"
+
+#: tedx/templates/common.mako:146
+msgid "title"
+msgstr "Título"
+
+#: tedx/templates/common.mako:146 tedx/templates/common.mako:270
+msgid "Nombre"
+msgstr "Nombre"
+
+#: tedx/templates/common.mako:148 tedx/templates/my_account.mako:89
+#: tedx/templates/profile.mako:33
+msgid "description"
+msgstr "Descripción"
+
+#: tedx/templates/common.mako:148
+msgid "Descripción"
+msgstr "Descripción"
+
+#: tedx/templates/common.mako:152 tedx/templates/content.mako:64
+#: tedx/templates/view.mako:64
+msgid "image"
+msgstr "Imagen"
+
+#: tedx/templates/common.mako:157 tedx/templates/content.mako:70
+#: tedx/templates/view.mako:70
+msgid "youtube"
+msgstr "Youtube"
+
+#: tedx/templates/common.mako:166
+msgid "advanced"
+msgstr "Subir avanzado"
+
+#: tedx/templates/common.mako:166
+msgid "Enviar datos"
+msgstr "Enviar datos"
+
+#: tedx/templates/common.mako:175 tedx/templates/content.mako:56
+msgid "search"
+msgstr "Buscar"
+
+#: tedx/templates/common.mako:176
+msgid "geolocation"
+msgstr "Geoposicióname"
+
+#: tedx/templates/common.mako:190
+msgid "equipo"
+msgstr "equipo"
+
+#: tedx/templates/common.mako:191
+msgid "acerca de"
+msgstr "acerca de"
+
+#: tedx/templates/common.mako:192
+msgid "contacto"
+msgstr "contacto"
+
+#: tedx/templates/common.mako:202
+msgid "Recuperar contraseña"
+msgstr "Recuperar contraseña"
+
+#: tedx/templates/common.mako:204
+msgid ""
+"Introduce el email con el que te registraste y te enviaremos tu nueva "
+"contraseña allí."
+msgstr ""
+"Introduce el email con el que te registraste y te enviaremos tu nueva "
+"contraseña allí."
+
+#: tedx/templates/common.mako:214 tedx/templates/common.mako:265
+#: tedx/templates/common.mako:296
+msgid "cancel"
+msgstr "Cancelar"
+
+#: tedx/templates/common.mako:217
+msgid "Registro de usuario"
+msgstr "Registro de usuario"
+
+#: tedx/templates/common.mako:219 tedx/templates/common.mako:277
+#: tedx/templates/register.mako:19
+msgid "email"
+msgstr "Email"
+
+#: tedx/templates/common.mako:233 tedx/templates/register.mako:39
+msgid "repeat_password"
+msgstr "Repetir contraseña"
+
+#: tedx/templates/common.mako:240 tedx/templates/my_account.mako:81
+#: tedx/templates/profile.mako:31 tedx/templates/register.mako:47
+msgid "nickname"
+msgstr "Nickname"
+
+#: tedx/templates/common.mako:247 tedx/templates/register.mako:59
+msgid "sex"
+msgstr "Sexo"
+
+#: tedx/templates/common.mako:250 tedx/templates/register.mako:65
+msgid "man"
+msgstr "Hombre"
+
+#: tedx/templates/common.mako:254 tedx/templates/register.mako:69
+msgid "woman"
+msgstr "Mujer"
+
+#: tedx/templates/common.mako:268
+msgid "Contacta con el equipo de Feelicity"
+msgstr "Contacta con el equipo de Feelicity"
+
+#: tedx/templates/common.mako:284
+msgid "Contenido"
+msgstr "Contenido"
+
+#: tedx/templates/common.mako:299
+msgid "Equipo"
+msgstr "Equipo"
+
+#: tedx/templates/common.mako:344
+msgid "Acerca de"
+msgstr "Acerca de"
+
+#: tedx/templates/common.mako:363
+msgid "Aceptar"
+msgstr "Aceptar"
+
+#: tedx/templates/content.mako:4
+msgid "new_streetit"
+msgstr "Nuevo lugar feliz"
+
+#: tedx/templates/content.mako:32 tedx/templates/view.mako:30
+msgid "sending_processing_please_wait"
+msgstr "Enviando y procesando los archivos adjuntos, por favor, espere"
+
+#: tedx/templates/content.mako:38
+msgid "streetit_name"
+msgstr "Nuevo lugar feliz"
+
+#: tedx/templates/content.mako:46 tedx/templates/view.mako:52
+msgid "comment_content"
+msgstr "Contenido del comentario"
+
+#: tedx/templates/content.mako:52
+msgid "position"
+msgstr "Posición"
+
+#: tedx/templates/content.mako:59 tedx/templates/view.mako:59
+msgid "comment_attach"
+msgstr "Adjuntar"
+
+#: tedx/templates/content.mako:90 tedx/templates/view.mako:89
+msgid "comment_tags"
+msgstr "Etiquetas de comentarios"
+
+#: tedx/templates/content.mako:97 tedx/templates/view.mako:96
+msgid "write_tags_comma_separated_or_click"
+msgstr "Escribe etiquetas separadas por espacio"
+
+#: tedx/templates/content.mako:100 tedx/templates/my_account.mako:96
+#: tedx/templates/register.mako:77 tedx/templates/view.mako:100
+msgid "save"
+msgstr "Guardar"
+
+#: tedx/templates/content.mako:106 tedx/templates/register.mako:86
+msgid "click_on_the_map_to_set_the_position"
+msgstr "Clica en el mapa para establecer la posición"
+
+#: tedx/templates/content.mako:107
+msgid "connect_to_other_social_networks"
+msgstr "Conéctate con otras redes sociales"
+
+#: tedx/templates/downloads.mako:4
+msgid "downloads"
+msgstr "Descargas"
+
+#: tedx/templates/downloads.mako:14
+msgid "download_mako"
+msgstr ""
+"<div style=\"margin-left:30px; margin-right: 30px; margin-top: "
+"30px;\">Las aplicaciones de Iphone y Android ya están "
+"disponibles:</div><div style=\"margin-left:30px; margin-top: 20px;\"><a "
+"href=\"/tedx_android.apk\"><img "
+"src=\"/images/imgAyudaAndroid.png\"></a><a "
+"href=\"itms://itunes.apple.com/es/app/tedx/id428916800?mt=8\"><img "
+"src=\"/images/imgAyudaIphone.png\"></a></div><br><div style=\"margin-"
+"left:30px; margin-right: 30px;\">Si deseas descargar tus Bidis ve a la "
+"página de 'Mis Streetis' y ahí podrás seleccionar todos los que "
+"quieras.</div><br><div style=\"margin-left:30px; margin-right: 30px;\">Si"
+" estas buscando lectores de códigos QR en nuestra página de 'Ayuda' te "
+"indicamos como obtenerlos.</div>"
+
+#: tedx/templates/help.mako:4
+msgid "help"
+msgstr "Ayuda"
+
+#: tedx/templates/help.mako:14
+msgid "help_mako"
+msgstr ""
+"<div id=\"cajaFondoGris\"><div id=\"cajaIlustraciones\"><div "
+"id=\"cajaImgAyuda01\"><div  id=\"txtAyuda01\"><a href=\"#\" "
+"class=\"estiloBlancoStrong02\" >¿Que es Streetrs?</a></div></div><div "
+"id=\"cajaImgAyuda02\"><div  id=\"txtAyuda01\"><a href=\"#\" "
+"class=\"estiloBlancoStrong02\" >¿Que contiene la "
+"pegatina?</a></div></div><div id=\"cajaImgAyuda03\"><div  "
+"id=\"txtAyuda01\"><a href=\"#\" class=\"estiloBlancoStrong02\" >¿Como "
+"leer Códigos QR?</a></div></div><div id=\"cajaImgAyuda04\"><img "
+"src=\"/images/imgAyudaAndroid.png\" alt=\"Descargar Aplicaciones  para "
+"Android\" longdesc=\"Descargar Aplicaciones  para Android\" /></div><div "
+"id=\"cajaImgAyuda05\"><img src=\"/images/imgAyudaIphone.png\" "
+"alt=\"Descargar Aplicaciones para I-Phone\" longdesc=\"Descargar "
+"Aplicaciones  para I-Phone\" /></div><div id=\"cajaImgAyuda06\"><img "
+"src=\"/images/imgAyudaBlakberry.png\" alt=\"Descargar Aplicaciones para "
+"Blackberry\" longdesc=\"Descargar Aplicaciones para Blackberry\" "
+"/></div><div id=\"cajaImgAyuda07\"><img "
+"src=\"/images/imgAyudaSymbian.png\" alt=\"Descargar Aplicaciones para "
+"Symbian\" longdesc=\"Descargar Aplicaciones para Symbian\" "
+"/></div></div><div id=\"lineaSepAyuda\"></div><div "
+"id=\"cajaTextoAyuda\"><p><a href=\"#1\" class=\"estiloRojoBig\">1) ¿Qué "
+"contiene la pegatina?</a><br /><a href=\"#2\" class=\"estiloRojoBig\">2) "
+"¿Cómo puedo leer los códigos QR desde mi móvil?</a><br /><a href=\"#3\" "
+"class=\"estiloRojoBig\">3) ¿Qué puedo hacer exactamente en "
+"Streetrs?</a><br /><a href=\"#4\" class=\"estiloRojoBig\">4) ¿Es "
+"necesario registrarse?</a><br /><a href=\"#5\" class=\"estiloRojoBig\">5)"
+" ¿Cómo puedo registrarme?</a><br /><a href=\"#6\" "
+"class=\"estiloRojoBig\">6) ¿Cómo puedo subir un nuevo streetit?</a><br "
+"/><a href=\"#7\" class=\"estiloRojoBig\">7) No he imprimido la pegatina, "
+"¿puedo volver a generarla?</a><br /><a href=\"#8\" "
+"class=\"estiloRojoBig\">8) Problemas con el tamaño de impresión de "
+"pegatinas</a><br /><a href=\"#9\" class=\"estiloRojoBig\">9) ¿Es posible "
+"enviar notificación de tus publicaciones?</a><br /><a href=\"#10\" "
+"class=\"estiloRojoBig\">10) ¿Cómo funcionan las votaciones?</a><br /><a "
+"href=\"#11\" class=\"estiloRojoBig\">11) Ejemplos de uso</a></p><p><br "
+"/><span class=\"Estilo1\"><strong>Streetrs</strong> es una aplicación web"
+" y móvil que permite a los usuarios subir diferentes contenidos (texto, "
+"imágenes, links, videos) y geoposicionarlos en cualquier lugar del\" "
+"\"mundo. Además de subir el contenido el usuario se puede descargar una "
+"imagen identificativa de su post y usarla como pegatina para ponerla "
+"directamente en esa ubicación e identificar de esta manera ese lugar.<br "
+"/>En el mapa inicial aparecen la posición actual del usuario y las "
+"publicaciones que tiene a su alrededor. De esta manera el usuario con su "
+"móvil por la calle puede saber en el momento qué publicaciones tiene\" "
+"\"cerca de su posición, colsultarlas o añadir más datos a la "
+"misma.</span></p><p class=\"titulo01\"><br />1 ::  ¿Qué contiene la "
+"pegatina?<a name=\"1\" id=\"1\"></a></p><p>La pegatina contiene el logo "
+"de <strong>Streetrs</strong> y un código bidimiensional QR. El código QR "
+"almacena la información del post que uno mismo ha creado en una matriz de"
+" puntos. Así, cualquier persona que va\" \"por la calle y dispone de un "
+"móvil con un lector de códigos bidimensionales puede acceder de manera "
+"directa al post, leerlo, añadir nuevos comentarios, etc.<br /></p><hr "
+"class=\"hr2\"/><p class=\"titulo01\">2 :: ¿Cómo puedo leer los códigos QR"
+" desde mi móvil?<a name=\"2\" id=\"2\"></a></p><p>Para leer los QR por la"
+" calle necesitarás instalar en tu móvil una aplicación lectora de códigos"
+" QR. Según tu tipo de móvil aquí te ponemos varias maneras de obtener una"
+" aplicación QR.                    <br />Si no sabes qué Sistema "
+"Operativo tiene tu móvil pero tienes Internet y estás viendo esto desde "
+"tu navegador móvil pincha aquí para saberlo.<br /></p><p "
+"class=\"titulo01\"><img src=\"/images/miniconoMovil.png\" alt=\"Android "
+"\" width=\"9\" height=\"16\" /> Android:<a name=\"android\" "
+"id=\"android\"></a></p><p>Visita desde el navegador de tu móvil alguna de"
+" las siguientes páginas:</p><blockquote><p><a "
+"href=\"http://www.i-nigma.mobi/\" "
+"target=\"_blank\">http://www.i-nigma.mobi</a><a "
+"href=\"http://reader.kaywa.com\" "
+"target=\"_blank\">http://reader.kaywa.com</a><br /><a "
+"href=\"http://www.upc.fi/en/upcode/instructions/download\" "
+"target=\"_blank\">http://www.upc.fi/en/upcode/instructions/download</a><br"
+" /><a href=\"http://www.quickmark.com.tw/En/basic/index.asp\" "
+"target=\"_blank\">http://www.quickmark.com.tw/En/basic/index.asp</a></p></blockquote><p>Detectarán"
+" tu modelo de móvil te pedirá que descargues la aplicación adecuada para "
+"leer QR-Codes.<br />Acepta, descarga e instala.</p><p>Otra opción es "
+"abrir la aplicación Market de tu Android y busca Barcode Scanner.<br "
+"/>Selecciónala y descárgatela. Aparecerá como una aplicación más en tu "
+"menú.</p><p class=\"titulo01\"<img src=\"/images/miniconoMovil.png\" "
+"alt=\"I-Phone\" width=\"9\" height=\"16\" /> iPhone:<span "
+"class=\"estiloRojoBig\"><a name=\"iphone\" "
+"id=\"iphone\"></a></span></p><p>Abre la aplicación AppStore de tu iPhone "
+"y busca Barcode Scanner.<br /></p><p>Selecciónala y descárgatela. "
+"Aparecerá como una aplicación más en tu menú.</p><p "
+"class=\"titulo01\"><img src=\"/images/miniconoMovil.png\" "
+"alt=\"Blackberry\" width=\"9\" height=\"16\" />  Blackberry:<span "
+"class=\"estiloRojoBig\"><a name=\"blackberry\" "
+"id=\"blackberry\"></a></span></p><p>Desde el navegador de tu móvil accede"
+" a <a href=\"http://get.neoreader.com\" "
+"target=\"_blank\">http://get.neoreader.com </a><br />Detectará el modelo "
+"de móvil y tras aceptar las condiciones te instalará la aplicación "
+"NeoReader.</p><p class=\"titulo01\"><img "
+"src=\"/images/miniconoMovil.png\" alt=\"Symbian\" width=\"9\" "
+"height=\"16\" /> Symbian:<span class=\"estiloRojoBig\"><a "
+"name=\"symbian\" id=\"symbian\"></a></span></p><p>Descarga el Barcode "
+"Reader desde el siguiente link:<a href=\"http://barcode-reader-"
+"s605th.softonic.com/movil/descargar#pathbar\" target=\"_blank\"> http"
+"://barcode-reader-s605th.softonic.com</a></p><p>Otra opción es que desde "
+"el navegador de tu móvil accedas a <a href=\"http://reader.kaywa.com\" "
+"target=\"_blank\">http://reader.kaywa.com</a> Te detectará el modelo de "
+"móvil y tras aceptar las condiciones te\" \"instalará la aplicación "
+"Kaywa.</p><p class=\"titulo01\"><img src=\"/images/miniconoMovil.png\" "
+"alt=\"Otros\" width=\"9\" height=\"16\" /> Otros:<span "
+"class=\"estiloRojoBig\"><a name=\"otros\" "
+"id=\"otros\"></a></span></p><p>Accede a <a "
+"href=\"http://www.i-nigma.mobi/\" "
+"target=\"_blank\">http://www.i-nigma.mobi/</a> sigue los pasos y "
+"descárgate la aplicación.<br />Es un lector muy competitivo para "
+"infinidad de dispositivos, fabricantes y gran número de "
+"plataformas.</p><p class=\"titulo01\">:: No dispongo de ninguno de los "
+"anteriores ni de conexión a Internet:</p><p>Si tu móvil soporta "
+"aplicaciones Java puedes descargarte la aplicación a tu ordenador y "
+"pasarla de tu ordenador al móvil vía Bluetooth o USB. Para ello entra "
+"desde el navegador de tu ordenador en <ahref=\"http:/reader.kaywa.com\" "
+"target=\"_blank\">http://reader.kaywa.com</a>.                </p>"
+"                <p>                    Te pedirá que te registres (es un "
+"registro rápido y gratuito) y, tras rellenar un formulario, te enviarán "
+"un email a la cuenta del registro con un link de activación. En tu correo"
+" pulsa ese link y automáticamente\" \"te llevará a la página de "
+"CONGRATULATIONS de The Kaywa Reader. Pincha en Download y tras aceptar "
+"las condiciones de uso se descargará un .zip con los ficheros .jar y "
+".jad.                </p>                <p>                    <br />"
+"                    A continuación deberás copiarlos a tu móvil como si "
+"de un Juego se tratase. En la mayoría de móviles basta con meter el "
+"fichero en la carpeta de Juegos o Games.Si esto no funciona deberás "
+"buscar concretamente cómo\" \"instalar aplicaciones java en tu modelo de "
+"móvil.                </p>                <p>                    Una vez "
+"descargada ábrela para testear si funciona y pon el móvil con la cámara "
+"de fotos enfocando al QR que hay en esta misma página. Intenta que el "
+"código salga entero y se vea nítido y el programa decodificará\" "
+"\"directamente el contenido mostrándotelo por pantalla.                "
+"</p>                <hr class=\"hr2 \"/>                <p "
+"class=\"titulo01\">                    3 :: ¿Qué puedo hacer exactamente "
+"en Streetrs?<span class=\"estiloRojoBig\"><a name=\"3\" "
+"id=\"3\"></a></span>                </p>                <p>"
+"                    <strong>Streetrs</strong> es como una red social "
+"geoposicionada. Esto significa que una persona puede escribir "
+"comentarios, subir fotos, vídeos, y asociarlos a una posición del "
+"mundo.Esto permite desarrollar posts\" \"como Ocurrió aquí, Aquí quedo "
+"con mis amigos, Aquí voy a dejarle un mensaje a mi chica, Tengo algo que "
+"decir sobre este sitio, etc.                    <br />                "
+"</p>                <hr class=\"hr2\"/>                <p "
+"class=\"titulo01\">                    4 :: ¿Es necesario "
+"registrarse?<span class=\"estiloRojoBig\"><a name=\"4\" "
+"id=\"4\"></a></span>                </p>                <p>"
+"                    No es necesario registrarse para ver los streetits de"
+" la gente, pero sí para comentar y añadir cosas a los streetits "
+"existentes o para crear nuevos.                </p>                <hr "
+"class=\"hr2 \"/>                <p class=\"titulo01\"></p>"
+"                    <p class=\"titulo01\">5  :: ¿Cómo puedo "
+"registrarme?</span><span class=\"estiloRojoBig\"><a name=\"5\" "
+"id=\"5\"></a></span>                </p>                <p>"
+"                    En la esquina superior derecha de la página de inicio"
+" pulsa en la etiqueta de Regístrate y te llevará directamente a la página"
+" de registro. Serán obligatorios un email, un password y un nickname. "
+"Asimismo se podrá\" \"posicionar en el mapa una ubicación preferente "
+"desde donde se subirán tus posts en caso de no estar geoposicionado."
+"                    <br />                </p>                <hr "
+"class=\"hr2 \"/>                <p class=\"titulo01\"                </p>"
+"                <p class=\"titulo01\">                    6 :: ¿Cómo "
+"puedo subir un nuevo streetit?<span class=\"estiloRojoBig\"><a name=\"6\""
+" id=\"6\"></a></span>                </p>                <p>"
+"                   Una vez registrado aparecerá arriba en la barra de "
+"usuario (arriba a la derecha) dicha opción. Pulsa en Nuevo Streetit y te "
+"llevará a la página general de subir contenido.Ahí tendrás la opción de "
+"ponerle un título,\" \"comentarlo, añadir texto, imagen, vídeo, etc y al "
+"final subirlo pulsando en Guardar. También hay unas opciones avanzadas "
+"que se explican más adelante.Al guardarlo Se te redirigirá directamente a"
+" tu post creado donde podrás\" \"descargarlo para imprimirlo pulsando "
+"sobre el botónDescargar Sticker o enviar la notificación a algún amigo "
+"pulsando en Enviar Notificación. Estas dos últimas opciones también "
+"aparecen en el momento de crear el post, pero si no se\" \"desean "
+"realizar en ese momento siempre están disponibles desde la página de ese "
+"streetit en concreto.                    <br />                </p>"
+"                <hr class=\"hr2 \"/>                <p "
+"class=\"titulo01\">                    7 :: No he imprimido la pegatina, "
+"¿puedo volver a generarla?<span class=\"estiloRojoBig\"><a name=\"7\" "
+"id=\"7\"></a></span>                </p>                <p>"
+"                    Por supuesto. En el hilo del lugar que has creado "
+"aparece la opción de Descargar Sticker para cada comentario. Así que "
+"podrás convertir tus mensajes publicados en pegatinas tantas veces como "
+"quieras.                    <br />                </p>                <hr"
+" class=\"hr2\"/>                <p class=\"titulo01\">"
+"                    8 :: Problemas con el tamaño de impresión de "
+"pegatinas<span class=\"estiloRojoBig\"><a name=\"8\" id=\"8\"></a></span>"
+"                </p>                <p>                    A la hora de "
+"imprimir las pegatinas tu puedes ajustar el tamaño para hacerlo a tu "
+"gusto. Es posible que tu editor de fotos te ponga ciertos tamaños por "
+"defecto que ocupen toda una página o lo contrario, dependerá\" \"del "
+"visor.Por eso desde aquí te recomendamos que si no tienes claro como "
+"ajustar el tamaño de impresión abras un nuevo documento de texto y ahí "
+"insertes la imagen y la ajustes a tu gusto.De esta manera podrás "
+"controlar ese tamaño y\" \"evitar posibles impresiones de tamaños "
+"indeseados.                </p>                <hr class=\"hr2 \"/>"
+"                <p class=\"titulo01\">                    9 :: Me "
+"gustaría avisar a unos amigos de mi publicación, ¿es posible?"
+"               </p>                <p>                    Sí que es "
+"posible. En el momento de crear el lugar podrás avisar a tus amigos "
+"clickando en Enviar Notificación. Si deseas avisarlos más adelante "
+"también tienes la opción en cada publicación de pinchar Notificar y\" "
+"\"enviársela a quien quieras con mensaje incluido.                </p>"
+"                <hr class=\"hr2 \"/>                <p "
+"class=\"titulo01\">                    10  :: ¿Cómo funcionan las "
+"votaciones?<span class=\"estiloRojoBig\"><a name=\"9\" "
+"id=\"9\"></a></span>                </p>                <p>"
+"                    <strong>Streetrs</strong> permite la votación tanto "
+"del lugar como de cada comentario de ese hilo. Tan sólo hay que pinchar "
+"en los logos asociados y automáticamente se apuntará tu votación.Las "
+"votaciones aparecen\" \"también en el resumen general de los lugares más "
+"cercanos en la página de inicio denotando así la importancia que tiene "
+"para el resto de usuarios cada publicación.                </p>"
+"                <hr class=\"hr2\"/>                <p class=\"titulo01\">"
+"                   11 :: Ejemplos de uso<span class=\"estiloRojoBig\"><a "
+"name=\"ejemplos\" id=\"ejemplos\"></a></span>                </p>"
+"               <ol>                    <li>                        El "
+"otro día me imprimí en una hoja varios logotipos de "
+"<strong>Streetrs</strong> para ir pegando por la calle cuando quiera "
+"postear algo. Sin ir más lejos esta mañana he pegado uno. Iba paseando "
+"por el casco\" \"viejo de mi ciudad y he pasado por mi bar de tapas "
+"favorito. Ahí voy con mis amigos todos los domingos por la mañana de "
+"tapeo a tomar los mejores champiñones del mundo. Y he creído que se lo "
+"tenía que hacer saber al resto de la ciudad.Así que me he grabado con mi "
+"móvil al lado del bar, opinando sobre el servicio, la calidad y sobretodo"
+" de los riquísimos champiñones que allí cocinan. Me he conectado desde mi"
+" móvil a la página web, he introducido mi email y contraseña y una vez "
+"logueado he pulsado en Nuevo Streetit y he rellenado los campos y he "
+"añadido el vídeo. Además como en el mapita de colocación del mensaje el "
+"móvil me había geoposicionado bien en el bar no he tenido que cambiar mi "
+"posición.He pulsado en Guardar y se ha subido correctamente. He sacado de"
+" mi bolsillo las pegatinas con el logo de <strong>Streetrs</strong>, he "
+"pegado una y así la gente ya lo verá y sabrá que hay algo colocado. "
+"Cuando alguien\" \"tenga curiosidad por ver qué hay ahí sólo tendrá que "
+"abrir desde su navegador móvil la página web de "
+"<strong>www.tedx.com</strong> y en la página de inicio ya le saldrán los "
+"mensajes de su alrededor incluyendo el mío. Además, eso\" \"podrá verlo "
+"todo el mundo, sin necesidad de estar registrado.                        "
+"<br />                        <br />                    </li>"
+"                    <li>                        Hoy me he levantado feliz"
+" y contento y he decidido que quiero darle una sorpresa a mi novia."
+"                        <br />                       Siempre se queja de "
+"que no soy detallista pero esta vez la voy a sorprender de verdad. Voy a "
+"dejarle un mensaje en la puerta del instituto, donde íbamos juntos a "
+"clase y donde evidentemente la conocí.                        <br />"
+"                        Así que lo primero es irme a la página web de "
+"<strong>Streetrs</strong> y en la parte superior derecha pincho en "
+"Regístrate para proceder a registrarme. El registro es sencillo, apenas "
+"pide un mail, una\" \"contraseña y un nickname. En el mapita de al lado "
+"pone mi ubicación actual, que más o menos se corresponde con la dirección"
+" de mi casa. Dejaré esa ubicación por defecto, aunque si pruebo a moverla"
+" me deja posicionarla en cualquier\" \"parte del mapa. Pulso guardar y ya"
+" estoy listo para streetear.<br />                       Como ya estoy "
+"registrado me lleva directamente a la página inicial donde puedo ver mi "
+"posición actual con los streetits que hay cerca de mi ubicación. En el "
+"menú de arriba a la derecha voy a pinchar en Nuevo\" \"streetit para "
+"crear el mío nuevo, y se me abre una nueva página con el texto a "
+"rellenar: título del lugar (voy a poner 'Aquí te conocí'), título del "
+"comentario (voy a poner 'Desde ese día soy el hombre más feliz del mundo "
+":)') y\" \"comentario ( voy a poner 'Espero que te guste mi sorpresa') . "
+"Además me he grabado diciéndole unas palabras así que pincho en Attach "
+"video, busco en mi directorio y agrego el vídeo.<br />También me da la "
+"opción de Enviar una Notificación que voy a clickar y a poner el correo "
+"de mi novia y un mensajito para convencerla de que lo vaya a ver. Y por "
+"supuesto le doy a Imprimir pegatina. Al darle a\" \"guardar se guarda mi "
+"post, se envía mi notificación, y por supuesto se me descarga un png "
+"listo para imprimir.<br />Una vez imprimido me cojo el abrigo y me voy a "
+"la puerta del instituto. Con mi barra de pegamento pego el stick a la "
+"pared (no tenia papel de pegatina) y ya está listo para que lo lea mi "
+"novia.</li></ol></div><p>&nbsp;</p><div class=\"clear\"></div></div> "
+
+#: tedx/templates/home.mako:4 tedx/templates/search.mako:4
+msgid "home"
+msgstr "Inicio"
+
+#: tedx/templates/home.mako:22 tedx/templates/search.mako:28
+msgid "happy_users"
+msgstr "usuarios felices"
+
+#: tedx/templates/home.mako:34 tedx/templates/my_account.mako:118
+#: tedx/templates/profile.mako:52 tedx/templates/search.mako:43
+#: tedx/templates/view.mako:111
+msgid "idea"
+msgstr "Una idea de"
+
+#: tedx/templates/home.mako:36 tedx/templates/my_account.mako:122
+#: tedx/templates/profile.mako:54 tedx/templates/search.mako:45
+#: tedx/templates/view.mako:115
+msgid "developed"
+msgstr "Desarrollada por"
+
+#: tedx/templates/home.mako:39 tedx/templates/my_account.mako:127
+#: tedx/templates/profile.mako:57 tedx/templates/search.mako:48
+#: tedx/templates/view.mako:120
+msgid "follow_us"
+msgstr "Síguenos en"
+
+#: tedx/templates/home.mako:42 tedx/templates/my_account.mako:134
+#: tedx/templates/profile.mako:60 tedx/templates/search.mako:51
+#: tedx/templates/view.mako:127
+msgid "available"
+msgstr "Disponible para"
+
+#: tedx/templates/home.mako:45 tedx/templates/my_account.mako:137
+#: tedx/templates/profile.mako:63 tedx/templates/search.mako:54
+#: tedx/templates/view.mako:134
+msgid "happy_cities"
+msgstr "ciudades felices"
+
+#: tedx/templates/my_account.mako:28 tedx/templates/profile.mako:4
+#: tedx/templates/profile.mako:24 tedx/templates/profile.mako:27
+msgid "profile"
+msgstr "Perfil"
+
+#: tedx/templates/my_account.mako:37
+msgid "change"
+msgstr "Cambiar avatar"
+
+#: tedx/templates/my_account.mako:57
+msgid "change password"
+msgstr "Cambiar contraseña"
+
+#: tedx/templates/my_account.mako:64
+msgid "old_password"
+msgstr "Antigua contraseña"
+
+#: tedx/templates/my_account.mako:72
+msgid "new_password"
+msgstr "Nueva contraseña"
+
+#: tedx/templates/notification.mako:13
+msgid "send_notification"
+msgstr "Enviar notificación"
+
+#: tedx/templates/notification.mako:25
+msgid "to"
+msgstr "Para"
+
+#: tedx/templates/notification.mako:33
+msgid "message"
+msgstr "Mensaje"
+
+#: tedx/templates/profile.mako:22
+msgid "the_user_doesnt_exist"
+msgstr "El usuario no existe"
+
+#: tedx/templates/view.mako:5
+msgid "view_place"
+msgstr "Ver lugar"
+
+#: tedx/templates/view.mako:46
+msgid "add_comment"
+msgstr "Añadir comentario"
+
+#: tedx/templates/view.mako:104
+msgid "login_first_to_comment"
+msgstr "Debes hacer login primero para poder comentar."
+

@@ -1,0 +1,722 @@
+# Translations template for tedx.
+# Copyright (C) 2011 ORGANIZATION
+# This file is distributed under the same license as the tedx project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tedx 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-09-15 17:59+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: tedx/controllers/common.py:31 tedx/controllers/common.py:44
+msgid "login_error"
+msgstr ""
+
+#: tedx/controllers/common.py:90
+msgid "No se ha encontrado un usuario con ese correo electrónico."
+msgstr ""
+
+#: tedx/controllers/common.py:106
+msgid "Nueva contraseña de Feelicity"
+msgstr ""
+
+#: tedx/controllers/common.py:107
+msgid "Nuevo password: "
+msgstr ""
+
+#: tedx/controllers/common.py:117
+msgid ""
+"No se ha podido enviar el correo electrónico a la dirección indicada. "
+"Intentelo de nuevo más tarde."
+msgstr ""
+
+#: tedx/controllers/common.py:154
+msgid "No se ha podido enviar el mensaje correctamente. Intentelo de nuevo más tarde."
+msgstr ""
+
+#: tedx/controllers/common.py:156
+msgid ""
+"Mensaje enviado correctamente. Nos pondremos en contacto contigo lo antes "
+"posible."
+msgstr ""
+
+#: tedx/controllers/content.py:58 tedx/controllers/content.py:104
+#: tedx/controllers/content.py:118 tedx/controllers/content.py:255
+msgid "you_must_login_to_add_content"
+msgstr ""
+
+#: tedx/controllers/content.py:63 tedx/controllers/view.py:140
+#: tedx/controllers/view.py:159
+msgid "error"
+msgstr ""
+
+#: tedx/controllers/content.py:123
+msgid "no_place_associated"
+msgstr ""
+
+#: tedx/controllers/content.py:126
+msgid "empty_comment"
+msgstr ""
+
+#: tedx/controllers/content.py:180 tedx/controllers/content.py:297
+#: tedx/controllers/my_account.py:192 tedx/public/js/content.js:232
+#: tedx/public/js/my_account.js:295 tedx/public/js/view.js:577
+msgid "file_selected_is_not_an image"
+msgstr ""
+
+#: tedx/controllers/content.py:222 tedx/controllers/my_account.py:235
+msgid "error_saving_file"
+msgstr ""
+
+#: tedx/controllers/content.py:230 tedx/controllers/view.py:120
+msgid "comment_doesnt_exist"
+msgstr ""
+
+#: tedx/controllers/content.py:338
+msgid "Momento feliz guardado correctamente."
+msgstr ""
+
+#: tedx/controllers/home.py:144
+msgid "user_not_found"
+msgstr ""
+
+#: tedx/controllers/home.py:158
+msgid "anonymous"
+msgstr ""
+
+#: tedx/controllers/my_account.py:35 tedx/controllers/my_account.py:62
+msgid "couldnt_save_profile"
+msgstr ""
+
+#: tedx/controllers/my_account.py:60
+msgid "data_successfully_saved"
+msgstr ""
+
+#: tedx/controllers/my_account.py:69 tedx/controllers/my_account.py:90
+#: tedx/controllers/profile.py:31 tedx/controllers/profile.py:57
+msgid "couldnt_get_info"
+msgstr ""
+
+#: tedx/controllers/my_account.py:97
+msgid "couldnt_get_location"
+msgstr ""
+
+#: tedx/controllers/my_account.py:169
+msgid "you_must_login"
+msgstr ""
+
+#: tedx/controllers/profile.py:36 tedx/controllers/user.py:17
+#: tedx/controllers/user.py:28 tedx/controllers/user.py:49
+msgid "you_must_be_logged"
+msgstr ""
+
+#: tedx/controllers/register.py:24 tedx/public/js/common.js:655
+#: tedx/public/js/common.js:736
+msgid "email_cannot_be_null"
+msgstr ""
+
+#: tedx/controllers/register.py:26 tedx/public/js/common.js:659
+msgid "password_cannot_be_null"
+msgstr ""
+
+#: tedx/controllers/register.py:30
+msgid "email_already_registered"
+msgstr ""
+
+#: tedx/controllers/register.py:36
+msgid "nickname_already_registered"
+msgstr ""
+
+#: tedx/controllers/register.py:43
+msgid "successfully_registered"
+msgstr ""
+
+#: tedx/controllers/tag.py:18
+msgid "empty_search"
+msgstr ""
+
+#: tedx/controllers/user.py:33 tedx/controllers/user.py:55
+#: tedx/controllers/view.py:61 tedx/controllers/view.py:115
+#: tedx/controllers/view.py:171 tedx/controllers/view.py:187
+msgid "not_id_received"
+msgstr ""
+
+#: tedx/controllers/user.py:37
+msgid "not_allowed_to_follow"
+msgstr ""
+
+#: tedx/controllers/user.py:41
+msgid "already_following"
+msgstr ""
+
+#: tedx/controllers/user.py:44
+msgid "now_following"
+msgstr ""
+
+#: tedx/controllers/user.py:64 tedx/controllers/user.py:67
+msgid "currently_not_following"
+msgstr ""
+
+#: tedx/controllers/view.py:66
+msgid "place_doesnt_exist"
+msgstr ""
+
+#: tedx/controllers/view.py:168 tedx/controllers/view.py:184
+msgid "you_must_login_to_vote"
+msgstr ""
+
+#: tedx/controllers/view.py:175
+msgid "you_have_already_voted_this_place"
+msgstr ""
+
+#: tedx/controllers/view.py:191
+msgid "you_have_already_voted_this_comment"
+msgstr ""
+
+#: tedx/public/js/common.js:253 tedx/public/js/common.js:258
+#: tedx/public/js/content.js:345 tedx/public/js/content.js:350
+msgid "you_are_here"
+msgstr ""
+
+#: tedx/public/js/common.js:305 tedx/public/js/common.js:434
+#: tedx/public/js/common.js:476 tedx/public/js/common.js:1083
+#: tedx/public/js/view.js:156
+msgid "comments"
+msgstr ""
+
+#: tedx/public/js/common.js:307 tedx/public/js/common.js:436
+msgid "comment"
+msgstr ""
+
+#: tedx/public/js/common.js:309 tedx/public/js/common.js:438
+#: tedx/public/js/common.js:1085
+msgid "like"
+msgstr ""
+
+#: tedx/public/js/common.js:311 tedx/public/js/common.js:440
+#: tedx/public/js/common.js:481 tedx/public/js/common.js:1084
+#: tedx/public/js/view.js:161
+msgid "visits"
+msgstr ""
+
+#: tedx/public/js/common.js:313 tedx/public/js/common.js:442
+msgid "visit"
+msgstr ""
+
+#: tedx/public/js/common.js:327
+msgid "searching_for_results"
+msgstr ""
+
+#: tedx/public/js/common.js:366
+msgid "has_uploaded"
+msgstr ""
+
+#: tedx/public/js/common.js:366
+msgid "contents"
+msgstr ""
+
+#: tedx/public/js/common.js:377
+msgid "results_found_for"
+msgstr ""
+
+#: tedx/public/js/common.js:380
+msgid "results_found_in_this_map_area"
+msgstr ""
+
+#: tedx/public/js/common.js:392 tedx/public/js/view.js:80
+msgid "page"
+msgstr ""
+
+#: tedx/public/js/common.js:394 tedx/public/js/view.js:82
+#: tedx/templates/profile.mako:24
+msgid "of"
+msgstr ""
+
+#: tedx/public/js/common.js:402 tedx/public/js/view.js:90
+msgid "results_per_page"
+msgstr ""
+
+#: tedx/public/js/common.js:461 tedx/public/js/view.js:141
+msgid "author"
+msgstr ""
+
+#: tedx/public/js/common.js:469 tedx/public/js/view.js:149
+msgid "last_update"
+msgstr ""
+
+#: tedx/public/js/common.js:486 tedx/public/js/view.js:166
+msgid "scoring"
+msgstr ""
+
+#: tedx/public/js/common.js:531
+msgid "you_have_no_streetits"
+msgstr ""
+
+#: tedx/public/js/common.js:534
+msgid "no_results_found_for"
+msgstr ""
+
+#: tedx/public/js/common.js:537
+msgid "no_results_found_in_this_map_area"
+msgstr ""
+
+#: tedx/public/js/common.js:663
+msgid "wrong_password_confirmation"
+msgstr ""
+
+#: tedx/public/js/common.js:667
+msgid "nickname_cannot_be_null"
+msgstr ""
+
+#: tedx/public/js/common.js:821 tedx/public/js/content.js:57
+msgid "place_name_cannot_be_null"
+msgstr ""
+
+#: tedx/public/js/common.js:825 tedx/public/js/content.js:61
+#: tedx/public/js/view.js:479
+msgid "comment_content_cannot_be_null"
+msgstr ""
+
+#: tedx/public/js/common.js:830 tedx/public/js/content.js:66
+msgid "location_cannot_be_null"
+msgstr ""
+
+#: tedx/public/js/common.js:850 tedx/public/js/content.js:30
+#: tedx/public/js/content.js:270 tedx/public/js/view.js:35
+#: tedx/public/js/view.js:603
+msgid "url_is_not_valid"
+msgstr ""
+
+#: tedx/public/js/common.js:1031 tedx/public/js/view.js:529
+#: tedx/public/js/view.js:551
+msgid "scoring_successfully_saved"
+msgstr ""
+
+#: tedx/public/js/common.js:1082 tedx/templates/home.mako:27
+#: tedx/templates/my_account.mako:109 tedx/templates/profile.mako:44
+#: tedx/templates/search.mako:34 tedx/templates/view.mako:38
+msgid "happy_moments"
+msgstr ""
+
+#: tedx/public/js/content.js:70
+msgid "receivers_cannot_be_null"
+msgstr ""
+
+#: tedx/public/js/content.js:237 tedx/public/js/view.js:582
+msgid "file_selected_is_not_a_video"
+msgstr ""
+
+#: tedx/public/js/content.js:294
+msgid "place_saved"
+msgstr ""
+
+#: tedx/public/js/my_account.js:61 tedx/public/js/my_account.js:76
+msgid "unfollow"
+msgstr ""
+
+#: tedx/public/js/my_account.js:64 tedx/public/js/profile.js:61
+msgid "You are not currently following anyone"
+msgstr ""
+
+#: tedx/public/js/my_account.js:79 tedx/public/js/profile.js:70
+msgid "You are not currently being followed by anyone"
+msgstr ""
+
+#: tedx/public/js/my_account.js:128
+msgid "join_categories"
+msgstr ""
+
+#: tedx/public/js/my_account.js:130
+msgid "There are no pending categories to join"
+msgstr ""
+
+#: tedx/public/js/my_account.js:156 tedx/templates/common.mako:211
+#: tedx/templates/common.mako:262 tedx/templates/common.mako:293
+#: tedx/templates/common.mako:358
+msgid "accept"
+msgstr ""
+
+#: tedx/public/js/my_account.js:157
+msgid "reject"
+msgstr ""
+
+#: tedx/public/js/my_account.js:159
+msgid "There are no pending requests"
+msgstr ""
+
+#: tedx/public/js/my_account.js:313
+msgid "error_changing_password"
+msgstr ""
+
+#: tedx/public/js/notification.js:25
+msgid "notification_sent"
+msgstr ""
+
+#: tedx/public/js/view.js:98 tedx/templates/notification.mako:4
+#: tedx/templates/notification.mako:43
+msgid "notify"
+msgstr ""
+
+#: tedx/public/js/view.js:99
+msgid "download_sticker"
+msgstr ""
+
+#: tedx/public/js/view.js:100 tedx/public/js/view.js:325
+msgid "download_video"
+msgstr ""
+
+#: tedx/public/js/view.js:101 tedx/public/js/view.js:254 tedx/public/js/view.js:258
+#: tedx/templates/my_account.mako:38
+msgid "remove"
+msgstr ""
+
+#: tedx/public/js/view.js:126
+msgid "comment_removed_on"
+msgstr ""
+
+#: tedx/public/js/view.js:615
+msgid "comment_successfully_saved"
+msgstr ""
+
+#: tedx/public/js/view.js:654
+msgid "comment_successfully_removed"
+msgstr ""
+
+#: tedx/templates/common.mako:48
+msgid "iphone_application_exists"
+msgstr ""
+
+#: tedx/templates/common.mako:55
+msgid "android_application_exists"
+msgstr ""
+
+#: tedx/templates/common.mako:77
+msgid "Has creado tu contenido con éxito."
+msgstr ""
+
+#: tedx/templates/common.mako:77
+msgid "¿Quieres compartirlo?"
+msgstr ""
+
+#: tedx/templates/common.mako:95
+msgid "usuario / email"
+msgstr ""
+
+#: tedx/templates/common.mako:96 tedx/templates/common.mako:226
+#: tedx/templates/my_account.mako:54 tedx/templates/register.mako:31
+msgid "password"
+msgstr ""
+
+#: tedx/templates/common.mako:97
+msgid "forgotten_password"
+msgstr ""
+
+#: tedx/templates/common.mako:98
+msgid "log_in"
+msgstr ""
+
+#: tedx/templates/common.mako:101
+msgid "login_question"
+msgstr ""
+
+#: tedx/templates/common.mako:102 tedx/templates/register.mako:4
+msgid "register"
+msgstr ""
+
+#: tedx/templates/common.mako:109
+msgid "hello"
+msgstr ""
+
+#: tedx/templates/common.mako:124 tedx/templates/my_account.mako:4
+msgid "my_account"
+msgstr ""
+
+#: tedx/templates/common.mako:125 tedx/templates/common.mako:144
+msgid "new_place"
+msgstr ""
+
+#: tedx/templates/common.mako:128
+msgid "log_out"
+msgstr ""
+
+#: tedx/templates/common.mako:142
+msgid "what_map"
+msgstr ""
+
+#: tedx/templates/common.mako:146
+msgid "title"
+msgstr ""
+
+#: tedx/templates/common.mako:146 tedx/templates/common.mako:270
+msgid "Nombre"
+msgstr ""
+
+#: tedx/templates/common.mako:148 tedx/templates/my_account.mako:89
+#: tedx/templates/profile.mako:33
+msgid "description"
+msgstr ""
+
+#: tedx/templates/common.mako:148
+msgid "Descripción"
+msgstr ""
+
+#: tedx/templates/common.mako:152 tedx/templates/content.mako:64
+#: tedx/templates/view.mako:64
+msgid "image"
+msgstr ""
+
+#: tedx/templates/common.mako:157 tedx/templates/content.mako:70
+#: tedx/templates/view.mako:70
+msgid "youtube"
+msgstr ""
+
+#: tedx/templates/common.mako:166
+msgid "advanced"
+msgstr ""
+
+#: tedx/templates/common.mako:166
+msgid "Enviar datos"
+msgstr ""
+
+#: tedx/templates/common.mako:175 tedx/templates/content.mako:56
+msgid "search"
+msgstr ""
+
+#: tedx/templates/common.mako:176
+msgid "geolocation"
+msgstr ""
+
+#: tedx/templates/common.mako:190
+msgid "equipo"
+msgstr ""
+
+#: tedx/templates/common.mako:191
+msgid "acerca de"
+msgstr ""
+
+#: tedx/templates/common.mako:192
+msgid "contacto"
+msgstr ""
+
+#: tedx/templates/common.mako:202
+msgid "Recuperar contraseña"
+msgstr ""
+
+#: tedx/templates/common.mako:204
+msgid ""
+"Introduce el email con el que te registraste y te enviaremos tu nueva "
+"contraseña allí."
+msgstr ""
+
+#: tedx/templates/common.mako:214 tedx/templates/common.mako:265
+#: tedx/templates/common.mako:296
+msgid "cancel"
+msgstr ""
+
+#: tedx/templates/common.mako:217
+msgid "Registro de usuario"
+msgstr ""
+
+#: tedx/templates/common.mako:219 tedx/templates/common.mako:277
+#: tedx/templates/register.mako:19
+msgid "email"
+msgstr ""
+
+#: tedx/templates/common.mako:233 tedx/templates/register.mako:39
+msgid "repeat_password"
+msgstr ""
+
+#: tedx/templates/common.mako:240 tedx/templates/my_account.mako:81
+#: tedx/templates/profile.mako:31 tedx/templates/register.mako:47
+msgid "nickname"
+msgstr ""
+
+#: tedx/templates/common.mako:247 tedx/templates/register.mako:59
+msgid "sex"
+msgstr ""
+
+#: tedx/templates/common.mako:250 tedx/templates/register.mako:65
+msgid "man"
+msgstr ""
+
+#: tedx/templates/common.mako:254 tedx/templates/register.mako:69
+msgid "woman"
+msgstr ""
+
+#: tedx/templates/common.mako:268
+msgid "Contacta con el equipo de Feelicity"
+msgstr ""
+
+#: tedx/templates/common.mako:284
+msgid "Contenido"
+msgstr ""
+
+#: tedx/templates/common.mako:299
+msgid "Equipo"
+msgstr ""
+
+#: tedx/templates/common.mako:344
+msgid "Acerca de"
+msgstr ""
+
+#: tedx/templates/common.mako:363
+msgid "Aceptar"
+msgstr ""
+
+#: tedx/templates/content.mako:4
+msgid "new_streetit"
+msgstr ""
+
+#: tedx/templates/content.mako:32 tedx/templates/view.mako:30
+msgid "sending_processing_please_wait"
+msgstr ""
+
+#: tedx/templates/content.mako:38
+msgid "streetit_name"
+msgstr ""
+
+#: tedx/templates/content.mako:46 tedx/templates/view.mako:52
+msgid "comment_content"
+msgstr ""
+
+#: tedx/templates/content.mako:52
+msgid "position"
+msgstr ""
+
+#: tedx/templates/content.mako:59 tedx/templates/view.mako:59
+msgid "comment_attach"
+msgstr ""
+
+#: tedx/templates/content.mako:90 tedx/templates/view.mako:89
+msgid "comment_tags"
+msgstr ""
+
+#: tedx/templates/content.mako:97 tedx/templates/view.mako:96
+msgid "write_tags_comma_separated_or_click"
+msgstr ""
+
+#: tedx/templates/content.mako:100 tedx/templates/my_account.mako:96
+#: tedx/templates/register.mako:77 tedx/templates/view.mako:100
+msgid "save"
+msgstr ""
+
+#: tedx/templates/content.mako:106 tedx/templates/register.mako:86
+msgid "click_on_the_map_to_set_the_position"
+msgstr ""
+
+#: tedx/templates/content.mako:107
+msgid "connect_to_other_social_networks"
+msgstr ""
+
+#: tedx/templates/downloads.mako:4
+msgid "downloads"
+msgstr ""
+
+#: tedx/templates/downloads.mako:14
+msgid "download_mako"
+msgstr ""
+
+#: tedx/templates/help.mako:4
+msgid "help"
+msgstr ""
+
+#: tedx/templates/help.mako:14
+msgid "help_mako"
+msgstr ""
+
+#: tedx/templates/home.mako:4 tedx/templates/search.mako:4
+msgid "home"
+msgstr ""
+
+#: tedx/templates/home.mako:22 tedx/templates/search.mako:28
+msgid "happy_users"
+msgstr ""
+
+#: tedx/templates/home.mako:34 tedx/templates/my_account.mako:118
+#: tedx/templates/profile.mako:52 tedx/templates/search.mako:43
+#: tedx/templates/view.mako:111
+msgid "idea"
+msgstr ""
+
+#: tedx/templates/home.mako:36 tedx/templates/my_account.mako:122
+#: tedx/templates/profile.mako:54 tedx/templates/search.mako:45
+#: tedx/templates/view.mako:115
+msgid "developed"
+msgstr ""
+
+#: tedx/templates/home.mako:39 tedx/templates/my_account.mako:127
+#: tedx/templates/profile.mako:57 tedx/templates/search.mako:48
+#: tedx/templates/view.mako:120
+msgid "follow_us"
+msgstr ""
+
+#: tedx/templates/home.mako:42 tedx/templates/my_account.mako:134
+#: tedx/templates/profile.mako:60 tedx/templates/search.mako:51
+#: tedx/templates/view.mako:127
+msgid "available"
+msgstr ""
+
+#: tedx/templates/home.mako:45 tedx/templates/my_account.mako:137
+#: tedx/templates/profile.mako:63 tedx/templates/search.mako:54
+#: tedx/templates/view.mako:134
+msgid "happy_cities"
+msgstr ""
+
+#: tedx/templates/my_account.mako:28 tedx/templates/profile.mako:4
+#: tedx/templates/profile.mako:24 tedx/templates/profile.mako:27
+msgid "profile"
+msgstr ""
+
+#: tedx/templates/my_account.mako:37
+msgid "change"
+msgstr ""
+
+#: tedx/templates/my_account.mako:57
+msgid "change password"
+msgstr ""
+
+#: tedx/templates/my_account.mako:64
+msgid "old_password"
+msgstr ""
+
+#: tedx/templates/my_account.mako:72
+msgid "new_password"
+msgstr ""
+
+#: tedx/templates/notification.mako:13
+msgid "send_notification"
+msgstr ""
+
+#: tedx/templates/notification.mako:25
+msgid "to"
+msgstr ""
+
+#: tedx/templates/notification.mako:33
+msgid "message"
+msgstr ""
+
+#: tedx/templates/profile.mako:22
+msgid "the_user_doesnt_exist"
+msgstr ""
+
+#: tedx/templates/view.mako:5
+msgid "view_place"
+msgstr ""
+
+#: tedx/templates/view.mako:46
+msgid "add_comment"
+msgstr ""
+
+#: tedx/templates/view.mako:104
+msgid "login_first_to_comment"
+msgstr ""
+

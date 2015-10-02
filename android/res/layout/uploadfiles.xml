@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_above="@id/controls">
+		<LinearLayout android:id="@+id/files"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:id="@+id/controls"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal"
+		android:layout_alignParentBottom="true" android:background="@android:drawable/bottom_bar">
+		<Button android:id="@+id/add_image" android:text="@string/btn_add_image"
+			android:layout_width="140dip" android:layout_height="wrap_content"
+			android:drawableTop="@android:drawable/ic_menu_gallery" />
+		<Button android:id="@+id/add_video" android:drawableTop="@android:drawable/ic_menu_upload_you_tube"
+			android:text="@string/btn_add_youtube" android:layout_width="140dip"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</RelativeLayout>

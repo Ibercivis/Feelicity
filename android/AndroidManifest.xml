@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionName="1.03" package="com.bifi.feelicity" android:versionCode="6">
+
+	<supports-screens android:largeScreens="true"
+		android:normalScreens="true" android:smallScreens="true"
+		android:anyDensity="true" />
+
+	<uses-feature android:name="android.hardware.camera" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="8"></uses-sdk>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+
+	<application android:name=".CustomApp" android:background="#FFFFFF"
+		android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.Light.NoTitleBar">
+		<uses-library android:name="com.google.android.maps" />
+
+		<activity android:name=".Home" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Search" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.Search" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Login" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.Login" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".Register" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.Register" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ViewPlace" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.ViewPlace" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ViewComments" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.ViewComments" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ViewComment" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.ViewComment" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MediaViewer" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MediaViewer" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".MapGeolocation" android:label="@string/app_name"
+			android:process=":MapView2" android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MapGeolocation" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".UploadFiles" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.UploadFiles" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".YoutubePicker" android:label="@string/app_name"
+			android:configChanges="orientation" android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.YoutubePicker" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".NewComment" android:label="@string/app_name"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.NewComment" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+	</application>
+
+</manifest> 

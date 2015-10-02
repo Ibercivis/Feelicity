@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*-----------------------------------------------------------*/
+
+
+
+#manchaIzda {
+    position:relative;
+    float:left;
+    width:480px;
+    z-index:2;
+    border-left: none;
+}
+#manchaDcha {
+    position:relative;
+    float:right;
+    width:500px;
+    z-index:3;
+}
+#colDetStreetr {
+    position:relative;
+    float:left;
+    padding-left:23px;
+    padding-right:20px;
+    padding-top:23px;
+    padding-bottom:23px;
+    width:437px;
+    z-index:2000;
+}
+
+#botonImprimir {
+    position:relative;
+    top:45px;
+    float:right;
+    padding_left:10px;
+    text-align: center;
+    width:70px;
+    height:30px;
+    z-index:2002;
+}
+#botonDescargar {
+    position:relative;
+    top:45px;
+    float:right;
+    padding_left:10px;
+    text-align: center;
+    width:70px;
+    height:30px;
+    z-index:2003;
+}
+#botonEliminar {
+    position:relative;
+
+    top:45px;
+    float:right;
+    padding_left:10px;
+    text-align: center;
+    width:70px;
+    height:30px;
+    z-index:2004;
+}
+#nombreStreetr {
+    position:relative;
+    width:432px;
+    height:5em;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2005;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+    padding-bottom: 5px;
+}
+#comment_title {
+    width: 432px;
+}
+#descripcionStreetr {
+    position:relative;
+    top:10px;
+    width:432px;
+    height:auto;
+    padding-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2006;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+
+#posicionMomento {
+    position:relative;
+    top:20px;
+    width:432px;
+    height:55px;
+    padding-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2006;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+#comment_content {
+    width: 432px;
+    height: 80px;
+}
+#numCaracter {
+    position:relative;
+    width:auto;
+    border:1px;
+    z-index:2007;
+}
+#botonEditar {
+    position:relative;
+
+    float:right;
+
+    width:auto;
+    height:auto;
+    bottom:-15px;
+
+    z-index:2008;
+
+}
+
+#selecImages {
+    position:relative;
+    width:432px;
+    height:auto;
+    overflow:visible;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+    margin-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2010;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+
+}
+#botonSubirImg {
+    position:relative;
+    float:right;
+    padding-right: 13px;
+    width:auto;
+    height:auto;
+    z-index:2011;
+}
+#botonSubirVideo {
+    position:relative;
+    float:right;
+    padding-right: 13px;
+    width:auto;
+    height:auto;
+    z-index:2012;
+}
+#botonYoutube {
+    position:relative;
+    float:right;
+    padding-right: 13px;
+    width:auto;
+    height:auto;
+    z-index:2013;
+}
+#divContenedorImagen {
+    position:relative;
+    float:left;
+    clear:right;
+    padding-right:6px;
+    top:20px;
+    width:99px;
+    height:96px;
+    top:10px;
+
+    z-index:2014;
+
+}
+#divImagen {
+    position:relative;
+    float:left;
+
+    padding:2px;
+    width:94px;
+    height:72px;
+    top:0px;
+    z-index:2015;
+    background-color: #FFFFFF;
+
+}
+#botonBorrarImg {
+    position:relative;
+    float:left;
+
+    padding-top:5px;
+    width:auto;
+    height:15px;
+    bottom:0px;
+    z-index:2016;
+
+}
+#tags_content {
+    position:relative;
+    width:432px;
+    overflow:visible;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2010;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+
+#comment_tags {
+    width: 432px;
+}
+
+#advanced_options {
+    position:relative;
+    width:432px;
+    overflow:visible;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2010;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+
+.option_container {
+    position:relative;
+    padding-right:6px;
+    width:432px;
+    margin-top:10px;
+    clear: both;
+}
+
+.option_container .option_checkbox {
+    float:left;
+    margin-left: 10px;
+}
+
+.option_container .option_text {
+    float:left;
+    margin-left: 20px;
+    width: 370px;
+}
+
+.option_container .option_text .option_subtext {
+    float:left;
+    margin-top: 10px;
+}
+
+.acordion {
+    width: 200px;
+    height: 18px;
+    background: url(/images/flechaRedRight.png) no-repeat;
+}
+.acordion_active{
+    background: url(/images/flechaDown.png) no-repeat;
+}
+.acordion a {
+    margin-left: 18px;
+}
+
+#send_notification {
+    position:relative;
+    width:432px;
+    overflow:visible;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2010;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+
+#receivers {
+    width: 432px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#message {
+    width: 432px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* Tac Cloud */
+.xmpl {
+	height:100%;
+	list-style:none outside none; 
+	padding:0;
+}
+.smallest {
+	font-size : 10px;
+	float:left;	
+	padding-left:5px;
+	color: #c47272;
+}
+
+.small {
+	font-size : 13px;
+	float:left;	
+	padding-left:5px;
+	color: #c66a6a;
+}
+
+.medium {
+	font-size : 16px;
+	float:left;	
+	padding-left:5px;
+	color: #c65d5d;
+}
+
+.large {
+	font-size : 19px;
+	float:left;	
+	padding-left:5px;
+	color: #c44e4e;
+}
+
+.largest {
+	font-size : 22px;
+	float:left;	
+	padding-left:5px;
+	color: #A42A2A;
+}
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:padding="5dip">
+		<RelativeLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			<ImageView android:id="@+id/logo_image" android:src="@drawable/logo_feelicity"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true" />
+
+			<TextView android:id="@+id/email_label"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/msg_email" android:layout_below="@id/logo_image" />
+			<EditText android:id="@+id/email_text" android:hint="@string/msg_mandatory_field"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@id/email_label" />
+
+			<TextView android:id="@+id/nickname_label"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/msg_nickname" android:layout_below="@id/email_text"
+				android:layout_marginTop="5dip" />
+			<EditText android:id="@+id/nickname_text" android:hint="@string/msg_mandatory_field"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@id/nickname_label" />
+
+			<TextView android:id="@+id/password_label"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/msg_password" android:layout_below="@id/nickname_text"
+				android:layout_marginTop="5dip" />
+			<EditText android:hint="@string/msg_mandatory_field"
+				android:id="@+id/password_text" android:password="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@id/password_label" />
+
+			<TextView android:id="@+id/confirm_password_label"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/msg_confirm_password" android:layout_below="@id/password_text"
+				android:layout_marginTop="5dip" />
+			<EditText android:hint="@string/msg_mandatory_field"
+				android:id="@+id/confirm_password_text" android:password="true"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_below="@id/confirm_password_label" />
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:gravity="center" android:layout_below="@id/confirm_password_text">
+				<Button android:id="@+id/send_button" android:text="@string/btn_send"
+					android:layout_width="140dip" android:layout_height="wrap_content" android:drawableLeft="@android:drawable/ic_menu_save">
+				</Button>
+			</LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

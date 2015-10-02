@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+.account_container{
+    width: 947px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.account_container .left_column {
+    float:left;
+    width: 422px;
+    margin: 10px;
+}
+
+.account_container .right_column {
+    float: right;
+    width: 422px;
+    margin: 10px;
+}
+
+.profile_data {
+    float:left;
+    width: 600px;
+}
+.profile_qr {
+    float:right;
+    width: 320px;
+}
+
+#details_table td {
+    padding: 3px;
+    height: 20px;
+}
+
+#details_table input {
+    width: 250px;
+    height: 20px;
+}
+
+.acordion {
+    width: 200px;
+    height: 18px;
+    background: url(/images/flechaRedRight.png) no-repeat;
+}
+.acordion_active{
+    background: url(/images/flechaDown.png) no-repeat;
+}
+.acordion a {
+    margin-left: 18px;
+    font-family:lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size:14px;
+    color:#000000;
+    text-decoration: none;
+}
+
+#following {
+    margin-left: 10px;
+}
+.ItemFollowing{
+    float: left;
+    margin-right: 50px;
+    min-width: 50px;    
+}
+
+#followers {
+    margin-left: 10px;
+}
+.ItemFollowers{
+    float: left;
+    margin-right: 50px;
+    min-width: 50px;
+}

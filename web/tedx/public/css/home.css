@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+#bannerInicio {
+    margin-left:15px;
+    margin-top:15px;
+    width:671px;
+    height:197px;
+    z-index:1;
+
+    background-image: url(/images/bannerStreetr.jpg);
+    background-repeat: no-repeat;
+}
+#bannerApps {
+    position: relative;
+}
+#bannerApps .topTitle {
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    top: 30px;
+    width: 150px;
+}
+#bannerApps .bottomTitle {
+    position: absolute;
+    width: 100%;
+    text-align:center;
+    top: 160px;
+}
+#txt01 {
+    position:relative;
+    float:left;
+    margin-left:15px;
+    width:180px;
+    top:140px;
+    line-height: 100%;
+    text-align:justify;
+}
+#txt02 {
+    width:115px;
+    position:relative;
+    top:110px;
+    margin-left:25px;
+    float:left;
+    text-align:justify;
+    line-height: 100%;
+}
+#txt03 {
+    line-height: 100%;
+    position:relative;
+    float:left;
+    top:140px;
+    width:250px;
+    margin-left:15px;
+}
+#search_title{
+   margin-left: 40px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+#print_Stickers_txt{
+	float: right;
+	margin-right: 60px;
+}
+
+#print_Stickers_button{	
+	font-size: 12;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background-image: url("/images/pestana_100x35.png");    
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	color: #000000;
+}
+
+#print_Stickers_button:hover{
+	background-image: url("/images/pestana_100x35_bright.png");

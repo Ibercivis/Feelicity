@@ -1,0 +1,66 @@
+syntax: glob
+
+.bak
+.prefs
+Thumbs.db
+.DS_Store
+*.swp
+*.class
+*~.nib
+classes.dex
+resources.ap_
+R.java
+
+build
+xcuserdata
+project.xcworkspace
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode*v3
+*.orig
+
+# Ruby-on-Rails
+data
+server.pid
+tmp
+
+# Pylons
+*pyc
+public/files
+
+# eclipse
+.metadata
+.settings
+RemoteSystemsTempFiles
+
+# Proyectos de visual studio
+bin
+obj
+Release
+Debug
+*.suo
+*.err
+*.log
+*.obj
+*.bin
+*.dll
+*.exe
+*.LOG
+*.user
+*.pdb
+temp
+Temp
+tempPE
+TempPE
+thumbs.db
+*.vspscc
+*.vsssccc
+*.scc
+*.db
+*.bak
+*.snk
+logs
+output
+TestResults

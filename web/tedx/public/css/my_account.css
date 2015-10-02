@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+/*-----------------------NUEVAS CLASES----------------------*/
+
+#avatarPerfil {
+    position:relative;
+    width:150px;
+    z-index:2003;
+    margin: 10px 0 10px 10px;
+}
+/* --------------------------DIV TABLA--------------------------- */
+
+#srToolsUpVerPerfil {
+    width:450px;
+    position:relative;
+    height:25px;
+    margin-left:0px;
+    clear:left;
+    z-index:19;
+}
+#srToolsDownDcha {
+    width:450px;
+    position:relative;
+    height:25;
+    margin-top:40px;
+    clear:left;
+    z-index:20;
+}
+#tablaVerPerfil {
+
+    width:475px;
+    position:relative;
+    margin-left:0px;
+    clear:left;
+    z-index:21;
+}
+.tableVerPerfil {
+    width:100%;
+
+    border: 0px solid black;
+    border-spacing: 0px;
+    text-align:center;
+}
+.tableVerPerfil thead tr {
+
+    font-family:lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+}
+.tableVerPerfil thead tr th {
+
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    margin: 0px;
+    padding:0px;
+    background-color: #cccccc;
+}
+.tableVerPerfil tr {
+
+    font-family:lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size:9px;
+    background-color: #EEEEEE;
+    color:#681B1B;
+}
+.tableVerPerfil tr.odd {
+    background-color: #FBF4F4;
+    color: #A42A2A;
+}
+.tableVerPerfil tr td, th {
+    border-bottom: 1px solid white;
+    padding: 4px;
+}
+/*-----------------------FIN NUEVAS CLASES----------------------*/
+/*-----------------------FIN NUEVAS CLASES----------------------*/
+
+/*-------------- ESTILOS COLUMNA IZQUIERDA -------------------------*/
+
+.estiloAzulBig {
+    color: #3E7988;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#ayudaPostStreetr {
+    position:relative;
+    float:left;
+    padding-top:0px;
+    padding-left:23px;
+    width:430px;
+    height:auto;
+    z-index:2018;
+}
+#redesSociales {
+    position:relative;
+    float:left;
+    margin-top:100px;
+    padding-left:23px;
+    width:430px;
+    height:auto;
+    z-index:2019;
+}
+#registroStreetr {
+    position:relative;
+    margin-top:30px;
+    float:left;
+    width:400px;
+    height:auto;
+    padding-right:10px;
+    z-index:2020;
+}
+#emailMiCuenta {
+    position:relative;
+    clear:left;
+    margin-top:30px;
+    float:left;
+    width:422px;
+    height:30px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2006;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+#nickName {
+    position:relative;
+    clear:left;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    float:left;
+    width:422px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2006;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+#seguirA {
+    position:relative;
+    float:left;
+    width:422px;
+    height:70px;
+    overflow:visible;
+    padding-bottom:25px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    margin-top:50px;
+    z-index:2015;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+
+}
+.account_container {
+    position:relative;
+    width:250px;
+    padding: 10px 0 10px 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+}
+.account_container .long_input {
+    width: 100%;
+}
+.account_container .detail_title {
+    float:left;
+    width:80px;
+    margin-top: 10px;
+    min-height: 22px;
+}
+.account_container .detail_value {
+    float:left;
+    width:170px;
+    margin-top: 10px;
+    min-height: 22px;
+}
+.acordion {
+    
+    
+}
+.acordion_active {
+    width: 200px;
+    height: 18px;
+    margin-top: 10px;
+}
+
+.stats {
+    margin-top: 10px;
+}
+.stats_group {
+    margin-top: 20px;
+}
+#seguidores {
+    position:relative;
+    margin-top:60px;
+    float:left;
+    width:422px;
+    height:60px;
+    overflow:visible;
+    padding-bottom:25px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2016;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+
+}
+.seguirAvatar {
+    position:relative;
+    float:left;
+    padding-left:10px;
+    text-align: center;
+    width:auto;
+    z-index:2013;
+}
+#mensajes {
+    position:relative;
+    margin-top:70px;
+    float:left;
+    width:422px;
+    height:70px;
+    overflow:visible;
+    padding-bottom:25px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    z-index:2017;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: dashed;
+
+}
+#borrarMensaje {
+    position:relative;
+    margin-top:20px;
+    float:left;
+    padding-left:10px;
+    text-align: center;
+    width:70px;
+    height:20px;
+    z-index:2018;
+}
+#estadisticas {
+    position:relative;
+    margin-top:70px;
+    float:left;
+    width:422px;
+    height:150px;
+    overflow:visible;
+    padding-bottom:25px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    z-index:2017;
+    border-left: 0px;
+    border-color: #CCCCCC;
+    border-bottom-style: none;
+}
+#statStreetr {
+    position:relative;
+    margin-top:10px;
+    clear:left;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    width:auto;
+    height:20px;
+    z-index:2020;
+}
+#statComents {
+    position:relative;
+    margin-top:10px;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#statVisitas {
+    position:relative;
+    margin-top:10px;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#statImagenes {
+    position:relative;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    width:auto;
+    height:10px;
+    z-index:2021;
+}
+#statVideos {
+    position:relative;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    clear:left;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#statYoutube {
+    position:relative;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:20px;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#statPositivo {
+    position:relative;
+    margin-top:20px;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:8px;
+    clear:left;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#statNegativo {
+    position:relative;
+    margin-top:20px;
+    float:left;
+    padding-top:15px;
+    padding-left:3px;
+    padding-right:8px;
+    width:auto;
+    height:20px;
+    z-index:2021;
+}
+#print_Stickers_txt{
+	margin-top:15px;
+	margin-bottom:15px;
+	width:465px;
+}
+.button_width {
+	float:right;
+	margin-left:5px;
+}
+/*  --------------------------------------------------------------  */

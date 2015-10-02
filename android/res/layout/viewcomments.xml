@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ListView android:id="@+id/comment_list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_above="@id/controls" />
+	<RelativeLayout android:id="@+id/controls"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:padding="5dip" android:background="@android:drawable/bottom_bar">
+		<EditText android:id="@+id/page_text" android:text="1"
+			android:layout_height="wrap_content" android:layout_width="60dip"
+			android:inputType="number" android:ems="3"
+			android:layout_centerVertical="true" android:layout_alignParentLeft="true" />
+		<TextView android:id="@+id/pages_text" android:gravity="center_vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_toRightOf="@id/page_text" />
+		<Button android:id="@+id/new_comment" android:text="@string/btn_new_comment"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:drawableLeft="@android:drawable/ic_menu_send"
+			android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</RelativeLayout>
