@@ -15,7 +15,7 @@
  limitations under the License.
  -->
 <resources>
-  <string name="app_name">Feelicity</string>
+  <string name="app_name">Aqua</string>
   <string name="btn_map_mode">Mapa</string>
   <string name="btn_list_mode">Lista</string>
   <string name="btn_search">Buscar</string>
@@ -27,9 +27,9 @@
   <string name="msg_scorings">Valoraciones</string>
   <string name="msg_comment_content_mandatory">El contenido del comentario es obligatorio</string>
   <string name="msg_uploading_processing_data">Enviando y procesando datos...</string>
-  <string name="msg_place_saved_successfully">Lugar guardado correctamente</string>
+  <string name="msg_place_saved_successfully">Muestra guardada correctamente</string>
   <string name="msg_name_mandatory">El nombre es obligatorio</string>
-  <string name="msg_place_geolocation_not_set">No ha indicado la posición del lugar, por favor, clica en Ver mapa</string>
+  <string name="msg_place_geolocation_not_set">No ha indicado la posición de la muestra, por favor, clica en Ver mapa</string>
   <string name="msg_comment_saved_successfully">Comentario guardado correctamente</string>
   <string name="msg_email_mandatory">El email es obligatorio</string>
   <string name="msg_nickname_mandatory">El nickname es obligatorio</string>
@@ -54,7 +54,7 @@
   <string name="msg_title">Título:</string>
   <string name="btn_save">Guardar</string>
   <string name="btn_show_map">Ver mapa</string>
-  <string name="btn_attachments">Adjuntos</string>
+  <string name="btn_image_sample">Imagen</string>
   <string name="msg_comment_content">Contenido:</string>
   <string name="msg_name">Nombre:</string>
   <string name="btn_in_situ">In situ</string>
@@ -90,5 +90,18 @@
   <string name="btn_avatar">Avatar</string>
   <string name="msg_logout">Salir</string>
   <string name="btn_add_youtube">Añadir youtube</string>
-  <string name="btn_new_feelicity">Nuevo feelicity</string>
+  <string name="btn_new_sample">Nueva Muestra</string>
+  
+  <string name="msg_place_name">Lugar de la muestra</string>
+  <string name="msg_ph">pH</string>
+  <string name="msg_chlorine">Cloro</string>
+  <string name="msg_place_description">Descripción del lugar de la muestra</string>
+  <string name="msg_login_error">Problema al loguearse. Comprueba tu mail y contraseña.</string>
+  <string name="msg_place_name_mandatory">El nombre del lugar es obligatorio</string>
+  <string name="msg_ph_mandatory">El valor del pH es obligatorio</string>
+  <string name="msg_chlorine_mandatory">El valor del Cloro es obligatorio</string>
+  <string name="btn_map_selection">Situar aquí</string>
+  <string name="btn_locate_sample">Localizar</string>
+  <string name="msg_place_saved_successfully_no_file">Se ha grabado la muestra, pero ha fallado el archivo</string>
+  
 </resources>

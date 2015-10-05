@@ -20,7 +20,7 @@
 		<ImageButton android:id="@+id/zoom_in" android:background="@drawable/btn_zoom_up"
 			android:layout_width="wrap_content" android:layout_height="wrap_content" />
 	</LinearLayout>
-	<com.bifi.feelicity.MapTools.EnhancedMapView
+	<com.ibercivis.aqua.MapTools.EnhancedMapView
     android:id="@+id/mapview" android:layout_height="fill_parent"
     android:layout_width="fill_parent" android:clickable="true"
     android:apiKey="0IJJaWHOHlTfaCIKDAVF207GvhA4U3uMLfhOzmA" android:layout_above="@id/controls" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:map="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/tabhost" android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
 	<LinearLayout android:orientation="vertical"
@@ -8,94 +9,99 @@
 			android:layout_width="fill_parent" android:layout_height="wrap_content" />
 		<FrameLayout android:id="@android:id/tabcontent"
 			android:layout_width="fill_parent" android:layout_height="fill_parent">
-			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			<RelativeLayout
 				android:id="@+id/map_tab" android:orientation="vertical"
-				android:layout_height="fill_parent" android:layout_width="fill_parent">
-				<LinearLayout android:id="@+id/controls"
-					android:layout_height="wrap_content" android:padding="2dip"
-					android:layout_width="fill_parent"
-					android:layout_alignParentBottom="true" android:gravity="center"
-					android:background="@android:drawable/bottom_bar">
-					<EditText android:id="@+id/map_page_text" android:text="1"
-						android:layout_height="wrap_content" android:layout_width="60dip"
-						android:inputType="number" android:ems="3"
-						android:layout_alignParentTop="true" />
-					<TextView android:id="@+id/map_pages_text"
-						android:layout_width="wrap_content" android:layout_height="wrap_content" />
-					<Button android:id="@+id/center_me" android:drawableLeft="@drawable/btn_mylocation"
-						android:visibility="invisible" android:layout_width="wrap_content"
-						android:layout_height="wrap_content" />
-					<ImageButton android:id="@+id/zoom_out"
-						android:background="@drawable/btn_zoom_down" android:layout_width="wrap_content"
-						android:layout_height="wrap_content" />
-					<ImageButton android:id="@+id/zoom_in"
-						android:background="@drawable/btn_zoom_up" android:layout_width="wrap_content"
-						android:layout_height="wrap_content" />
-				</LinearLayout>
-				<!-- Signed -->
-				<com.bifi.feelicity.MapTools.EnhancedMapView
-					android:id="@+id/mapview" android:layout_height="fill_parent"
-					android:layout_width="fill_parent" android:clickable="true"
-					android:apiKey="0gi1a7NvhHJ4hW-CnAlnCuZ2gOOxpvkXrf6u9GA"
-					android:layout_above="@id/controls" />
-				<!-- Unsigned -->
-				<!--com.bifi.feelicity.MapTools.EnhancedMapView
-					android:id="@+id/mapview" android:layout_height="fill_parent"
-					android:layout_width="fill_parent" android:clickable="true"
-					android:apiKey="0gi1a7NvhHJ48ksMNSfFyWC7rYSJ2AvLY4QbTVg"
-					android:layout_above="@id/controls" /-->
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				
+			    <fragment 
+			        android:id="@+id/map"
+        			android:name="com.google.android.gms.maps.MapFragment"
+        			android:layout_width="match_parent"
+        			android:layout_height="match_parent"/>
 			</RelativeLayout>
-			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			<RelativeLayout
 				android:id="@+id/add_tab" android:orientation="vertical"
 				android:layout_width="fill_parent" android:layout_height="fill_parent"
 				android:padding="5dip">
 
-				<LinearLayout android:id="@+id/place_name"
+			    <ImageView android:id="@+id/nav_logo_image" android:src="@drawable/nav_logo"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+					android:layout_marginRight="30dip" />
+			    
+				<LinearLayout android:id="@+id/sample_content"
 					android:orientation="vertical" android:layout_width="fill_parent"
-					android:layout_height="wrap_content">
+					android:layout_height="fill_parent"
+					android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
 					<TextView android:id="@+id/place_name_label"
 						android:layout_width="wrap_content" android:layout_height="wrap_content"
-						android:text="@string/msg_name" android:layout_marginTop="10dip" />
+						android:text="@string/msg_place_name" android:layout_marginTop="5dip" />
 					<EditText android:id="@+id/place_name_text" android:hint="@string/msg_mandatory_field"
-						android:layout_width="fill_parent" android:layout_height="wrap_content" />
-				</LinearLayout>
-
-				<LinearLayout android:id="@+id/actions"
-					android:layout_width="fill_parent" android:layout_height="wrap_content"
-					android:gravity="center_horizontal"
-					android:layout_alignParentBottom="true">
-					<Button android:id="@+id/save_button" android:text="@string/btn_save"
-						android:layout_width="150dip" android:layout_height="wrap_content"
-						android:drawableLeft="@android:drawable/ic_menu_save">
-					</Button>
-				</LinearLayout>
-
-				<LinearLayout android:id="@+id/attachments"
-					android:layout_marginTop="5dip" android:layout_width="fill_parent"
-					android:layout_height="wrap_content" android:layout_above="@id/actions"
-					android:gravity="center_horizontal">
-					<Button android:id="@+id/show_map_button" android:text="@string/btn_map_mode"
-						android:layout_width="120dip" android:layout_height="wrap_content"
-						android:drawableTop="@android:drawable/ic_menu_mapmode">
-					</Button>
-					<Button android:id="@+id/attachments_button" android:text="@string/btn_attachments"
-						android:layout_width="120dip" android:layout_height="wrap_content"
-						android:layout_alignRight="@+id/content_text" android:drawableTop="@drawable/ic_menu_attachment">
-					</Button>
-				</LinearLayout>
-
-				<LinearLayout android:id="@+id/comment_content"
-					android:orientation="vertical" android:layout_width="fill_parent"
-					android:layout_height="fill_parent" android:layout_below="@id/place_name"
-					android:layout_above="@id/attachments">
-					<TextView android:id="@+id/comment_content_label"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" 
+						android:layout_marginTop="5dip" 
+						android:textSize="12dip" />
+					
+					<LinearLayout android:id="@+id/ph_chlorine"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:orientation="horizontal" android:gravity="center_horizontal">
+						
+						<LinearLayout android:id="@+id/ph_content"
+							android:layout_width="0dp" android:layout_height="wrap_content"
+        					android:orientation="vertical" android:layout_weight="1"
+							android:layout_marginRight="5dip">
+							
+							<TextView android:id="@+id/ph_label"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:text="@string/msg_ph" android:layout_marginTop="5dip" 
+								android:layout_marginLeft="1dip" />
+							<EditText android:id="@+id/ph_text" android:hint="@string/msg_mandatory_field"
+								android:layout_width="fill_parent" android:layout_height="wrap_content" 
+								android:inputType="numberDecimal" android:layout_marginTop="5dip" 
+								android:textSize="12dip" />
+						</LinearLayout>
+						
+						<LinearLayout android:id="@+id/chlorine_content"
+							android:layout_width="0dp" android:layout_height="wrap_content"
+        					android:orientation="vertical" android:layout_weight="1"
+							android:layout_marginLeft="5dip">
+							
+						    <TextView android:id="@+id/chlorine_label"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:text="@string/msg_chlorine" android:layout_marginTop="5dip"  
+								android:layout_marginLeft="1dip"/>
+							<EditText android:id="@+id/chlorine_text" android:hint="@string/msg_mandatory_field"
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:inputType="numberDecimal" android:layout_marginTop="5dip" 
+								android:textSize="12dip" />
+						</LinearLayout>
+					</LinearLayout>
+					
+					<TextView android:id="@+id/place_description_label"
 						android:layout_width="wrap_content" android:layout_height="wrap_content"
-						android:layout_marginTop="10dip" android:text="@string/msg_comment_content" />
-					<EditText android:id="@+id/comment_content_text"
-						android:hint="@string/msg_mandatory_field" android:layout_width="fill_parent"
-						android:layout_height="fill_parent" android:gravity="top" />
+						android:text="@string/msg_place_description" android:layout_marginTop="5dip" />
+					<EditText android:id="@+id/place_description_text"
+						android:layout_width="fill_parent" android:layout_height="70dip"
+						android:lines="4" android:layout_marginTop="5dip" 
+						android:textSize="12dip" />
+					
+					<LinearLayout android:id="@+id/actions"
+						android:layout_marginTop="5dip" android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+						android:gravity="center_horizontal">
+						<Button android:id="@+id/show_map_button" android:text="@string/btn_locate_sample"
+							android:layout_width="90dip" android:layout_height="wrap_content"
+							android:drawableTop="@android:drawable/ic_menu_mapmode">
+						</Button>
+						<Button android:id="@+id/save_button" android:text="@string/btn_save"
+							android:layout_width="90dip" android:layout_height="wrap_content"
+							android:drawableTop="@android:drawable/ic_menu_save">
+						</Button>
+						<Button android:id="@+id/image_sample_button" android:text="@string/btn_image_sample"
+							android:layout_width="90dip" android:layout_height="wrap_content"
+							android:drawableTop="@drawable/ic_menu_gallery">
+						</Button>
+					</LinearLayout>
 				</LinearLayout>
-
 			</RelativeLayout>
 
 		</FrameLayout>
